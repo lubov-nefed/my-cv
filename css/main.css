@@ -1,0 +1,143 @@
+:root {
+ --main-color: #42B6FF;
+ --accent-color: #FF2E47;
+ --code-string-color: #B32032;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a:hover, button:hover {
+    cursor: pointer;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    padding-top: 30px;
+}
+.header__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__nav {
+    padding-top: 4px;
+}
+
+.header__list {
+    display: flex;
+}
+
+.header__anchor {
+    padding: 6px 13px;
+}
+.lang-switcher {
+    margin-top: 10px;
+}
+
+.lang-switcher__rectangle {
+    display: inline-block;
+    height: 23px;
+    width: 50px;
+}
+.lang-switcher__cicle {
+
+}
+
+/* Main */
+.up-arrow-btn {
+    position: absolute;
+    right: 0;
+}
+/* About */
+.section:first-child {
+    margin-top: 50px;
+    display: grid;
+}
+
+.avatar-img {
+    width: 211px;
+    height: 211px;
+}
+
+.section__btn {
+    background-color: var(--main-color);
+    color: #fff;
+    border-radius: 35px;
+}
+/* Section */
+
+.section:not(:first-child) {
+    margin-top: 45px;
+}
+.section__heading {
+    font-weight: 700;
+}
+
+.bullet-img {
+    display: inline-block;
+}
+
+/* Education&Skills */
+
+/* Courses */
+
+
+/* Skills */
+
+/* Projects */
+.projects-wrapper {
+    display: grid;
+}
+
+.project {
+    display: grid;
+}
+.project__name {
+    display: inline-block;
+}
+.project__techs {
+    display: inline-flex;
+}
+
+.techs__item {
+    font-size: 12px;
+    color: var(--accent-color);
+    border: solid 1px var(--accent-color);
+    border-radius: 10px;
+}
+
+/* Code */
+.code {
+    font-family: monospace;
+    color: #104993;
+    background-color: #E4EBF1;
+}
+
+.span--main-color {
+    color: var(--main-color);
+}
+.span--accent-color {
+    color: var(--accent-color);    
+}
+.span--code-string-color {
+    color: var(--code-string-color);
+}
+
+/* Languages */
+
+/* Contacts */
+
+/* Footer */
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+}
+.footer__contacts {
+    display: flex;
+}

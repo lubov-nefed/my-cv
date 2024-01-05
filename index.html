@@ -1,17 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">  
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <!--Подключение шрифтов-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/light-theme.css">
     <title>Lyubov Nefyodova Junior Frontend Developer</title>
 </head>
-<body>
 
-    
+<body>
+    <header class="header">
+        <div class="header__container container">
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__li"><a href="#about" class="header__anchor">About</a></li>
+                    <li class="header__li"><a href="#education&skills" class="header__anchor">Education & Skills</a>
+                    </li>
+                    <li class="header__li"><a href="#projects" class="header__anchor">Projects</a></li>
+                    <li class="header__li"><a href="#code" class="header__anchor">Code</a></li>
+                    <li class="header__li"><a href="#contacts" class="header__anchor">Contacts</a></li>
+                </ul>
+            </nav>
+            <div class="header-btns-container">
+                <button class="theme-switcher">
+                    <img src="images/header/theme-switch-icon--light.svg" alt="Switch theme"
+                        class="theme-switcher__img">
+                </button>
+                <button class="lang-switcher" title="Switch language">
+                    <span>en</span>
+                    <span class="lang-switcher__rectangle">
+                        <span class="lang-switcher__cicle"></span>
+                    </span>
+                    <span>ru</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main__container container">
+            <button  class="up-arrow-btn"></button>
+            <section class="section">
+                <h1 class="section__heading"><span class="span--accent-color">Hi, I’m </span><span
+                        class="span--main-color">Lyubov Nefyodova</span>
+                    Junior Frontend Developer</h1>
+                <img class="avatar-img" src="images/main/my-avatar.png" alt="Lyubov Nefyodova avatar image">
+                <p class="section__paragraph">I aspire to become a qualified frontend developer with strong technical
+                    skills and good performance as a team member.</p>
+                <button class="section__btn">Contact me</button>
+            </section>
+            <section class="section">
+                <h2 class="section__heading">About me</h2>
+                <div class="section__content">
+                    <p class="section__paragraph">I’m junior front-end developer interested in continuous learning and
+                        gaining real project experience. I’m opened to new interesting and significant projects. My best
+                        soft skills are effective communication and flexibility in teamwork.</p>
+                </div>
+            </section>
+            <section class="section">
+                <h2 class="section__heading">Education & Skills</h2>
+                <div class="section__content">
+                    <ul>
+                        <li>
+                            <img class="bullet-img" src="images/main/bullet-icon.svg" alt="List Bullet">
+                            Lobachevsky University, B.A. in Psychology
+                            2014 - 2018
+                        </li>
+                        <li>
+                            <img class="bullet-img" src="images/main/bullet-icon.svg" alt="List Bullet">
+                            Lobachevsky University, Physical Culture and Sports (short-program)
+                            March 2019 - June 2019
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section">
+                <h2 class="section__heading">Courses</h2>
+                <div class="section__content">
+                    <ul>
+                        <li>
+                            <img class="bullet-img" src="images/main/education&skills/rs-school-icon.svg"
+                                alt="Rs School icon">
+                            Rs School, Frontend Stage #0
+                            May 2022 – September 2022
+                        </li>
+                        <li>
+                            <img class="bullet-img" src="images/main/education&skills/free-code-camp-icon.svg"
+                                alt="FreeCodeCamp icon">
+                            FreeCodeCamp
+                            January 2021 - September 2022
+                            251 total points
+                        </li>
+                        <li>
+                            <img class="bullet-img" src="images/main/education&skills/mimo-app-icon.svg"
+                                alt="Mimo App icon">
+                            Mimo App
+                            November 2021 - May 2022
+                            84% Web Development
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section">
+                <h2 class="section__heading">Skills</h2>
+                <div class="section__content">
+                    <ul>
+                        <li>
+                            <img class="bullet-img" src="images/main/education&skills/javascript-icon.svg"
+                                alt="JavaScript icon">
+                            JavaScript, HTML, CSS
+                        </li>
+                        <li>
+                            <img class="bullet-img" src="images/main/education&skills/git-icon.svg" alt="Git icon">
+                            Git
+                        </li>
+                        <li>
+                            <img class="bullet-img" src="images/main/education&skills/react-icon.svg" alt="React icon">
+                            React (basics)
+                        </li>
+                        <li><img class="bullet-img" src="images/main/bullet-icon.svg" alt="List Bullet">BEM (naming and
+                            file structure)</li>
+                        <li><img class="bullet-img" src="images/main/bullet-icon.svg" alt="List Bullet">Figma</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section">
+                <h2 class="section__heading">Projects</h2>
+                <div class="section__content projects-wrapper">
+                    <a href="" class="project">
+                        <img src="" alt="Your Profile" class="project__img">
+                        <p class="project__name">Your Profile</p>
+                        <ul class="project__techs">
+                            <li class="techs__item">
+                                <img src="images/main/javascript-projects-icon.svg" alt="javascript">
+                            </li>
+                            <li class="techs__item">html</li>
+                            <li class="techs__item">css</li>
+                        </ul>
+                    </a>
+                    <a href="" class="project">
+                        <img src="" alt="Pizza Market" class="project__img">
+                        <p class="project__name">Pizza Market</p>
+                        <ul class="project__techs">
+                            <li class="techs__item">
+                                <img src="images/main/javascript-projects-icon.svg" alt="javascript">
+                            </li>
+                            <li class="techs__item">html</li>
+                            <li class="techs__item">css</li>
+                        </ul>
+                    </a>
+                    <a href="" class="project">
+                        <img src="" alt="Computer Course" class="project__img">
+                        <p class="project__name">Computer Course</p>
+                        <ul class="project__techs">
+                            <li class="techs__item">
+                                <img src="images/main/javascript-projects-icon.svg" alt="javascript">
+                            </li>
+                            <li class="techs__item">html</li>
+                            <li class="techs__item">css</li>
+                        </ul>
+                    </a>
+                    <a href="" class="project">
+                        <img src="" alt="Safari" class="project__img">
+                        <p class="project__name">Safari</p>
+                        <ul class="project__techs">
+                            <li class="techs__item">html</li>
+                            <li class="techs__item">css</li>
+                        </ul>
+                    </a>
+                    <a href="" class="project">
+                        <img src="" alt="Relvise" class="project__img">
+                        <p class="project__name">Relvise</p>
+                        <ul class="project__techs">
+                            <li class="techs__item">html</li>
+                            <li class="techs__item">css</li>
+                        </ul>
+                    </a>
+                    <a href="" class="project">
+                        <img src="" alt="Expoforum" class="project__img">
+                        <p class="project__name">Expoforum</p>
+                        <ul class="project__techs">
+                            <li class="techs__item">html</li>
+                            <li class="techs__item">css</li>
+                        </ul>
+                    </a>
+                </div>
+            </section>
+            <section class="section">
+                <h2 class="section__heading">Code sample</h2>
+                <div class="section__content">
+                    <p class="code">
+                        <span class="span--main-color">function <span
+                                class="span--accent-color">hellloAlert</span>()</span> {
+                        <span class="span--accent-color">alert</span>(<span class="span--code-string-color">'Hey
+                            there!'</span>);
+                        }
+                        <span class="span--main-color">const </span>button = document<span
+                            class="span--accent-color">.querySelector</span><span class="span--main-color">(<span
+                                class="span--code-string-color">'#clickMe'</span>)</span>;
+                        button<span
+                        class="span--accent-color">.addEventListener</span><span class="span--main-color">(<span
+                        class="span--code-string-color">'click'</span>, <span class="span--accent-color">hellloAlert</span>)</span>;
+                    </p>
+                </div>
+            </section>
+            <section class="section">
+                <h2 class="section__heading">Languages</h2>
+                <div class="section__content">
+                    <ul>
+                        <li>
+                            <img class="bullet-img" src="images/main/bullet-icon.svg" alt="List Bullet">
+                            Russian (native)
+                        </li>
+                        <li>
+                            <img class="bullet-img" src="images/main/bullet-icon.svg" alt="List Bullet">
+                            English (B1-B2)
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section">
+                <h2 class="section__heading">Contacts</h2>
+                <div class="section__content">
+                    <ul>
+                        <li><a href="">
+                                <img class="bullet-img" src="images/main/contacts/email-icon.svg" alt="Email icon">
+                                e-mail: love.nefed@gmail.com</a>
+                        </li>
+                        <li><a href="">
+                                <img class="bullet-img" src="images/main/contacts/viber-icon.svg" alt="React icon">
+                                Viber: +79991394531</a>
+                        </li>
+                        <li><a href="">
+                                <img class="bullet-img" src="images/main/contacts/linkedin-icon.svg" alt="React icon">
+                                LinkedIn: www.linkedin.com/in/lubov-nefed</a>
+                        </li>
+                        <li><a href="">
+                                <img class="bullet-img" src="images/main/contacts/github-icon.svg" alt="React icon">
+                                Github: https://github.com/lubov-nefed</a>
+                        </li>
+                        <li><a href="">
+                                <img class="bullet-img" src="images/main/contacts/location-icon.svg" alt="React icon">
+                                Location: Russia, Nizhny Novgorod</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__container container">
+            <p>© 2022 Lyubov Nefyodova</p>
+            <ul class="footer__contacts">
+                <li class="footer__li"><a href="" class="footer__link"><img src="images/footer/viber-icon.svg"
+                            alt="Contact via Viber" class="footer__img"></a> </li>
+                <li class="footer__li"><a href="" class="footer__link"><img src="images/footer/linkedin-icon.svg"
+                            alt="Contact via LinkedIn" class="footer__img"></a> </li>
+                <li class="footer__li"><a href="" class="footer__link"><img src="images/footer/github-icon.svg"
+                            alt="Go to Github Profile" class="footer__img"></a></li>
+            </ul>
+        </div>
+    </footer>
+
     <script src="js/script.js" type="module"></script>
 </body>
+
 </html>
