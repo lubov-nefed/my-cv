@@ -1,3 +1,4 @@
+
 :root {
  --main-color: #42B6FF;
  --accent-color: #FF2E47;
@@ -36,17 +37,35 @@ a:hover, button:hover {
 .header__anchor {
     padding: 6px 13px;
 }
+
+.header-btns-container {
+    display: flex;
+    align-items: center;
+}
+
 .lang-switcher {
-    margin-top: 10px;
+    display: inline-flex;
+    align-items: center;
+    color: #fff;
 }
 
 .lang-switcher__rectangle {
-    display: inline-block;
+    display: inline-flex;
     height: 23px;
     width: 50px;
+    border-radius: 20px;
+    background-color: #fff;
+    margin: 0 10px;
+    padding-top: 4px;
 }
-.lang-switcher__cicle {
-
+.lang-switcher__circle {
+    display: inline-block;
+    position: relative;
+    left: 7px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: var(--main-color);
 }
 
 /* Main */
