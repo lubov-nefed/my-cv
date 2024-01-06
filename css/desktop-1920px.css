@@ -1,0 +1,36 @@
+@media screen and (min-width: 1001px) {
+    body {
+        font-size: 18px;
+    }
+    h1 {
+        font-size: 36px;
+        /* width: 484px; */
+    }
+    .container {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    /* Header */
+    .header {
+        font-size: 20px;
+        height: 112px;
+    }
+    .lang-switcher {
+        margin-left: 25px;
+    }
+    
+    /* Main */
+    .first-section {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .avatar-img {
+        grid-row-end: span 3;
+    }
+    .section__heading {
+        font-size: 26px;
+    }
+
+    /* Footer */
+}

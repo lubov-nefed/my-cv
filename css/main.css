@@ -1,3 +1,8 @@
+@import url('desktop-1920px.css');
+@import url('laptop-1000px.css');
+@import url('tablet-768px.css');
+@import url('mobile-m-480px.css');
+@import url('mobile-s-320px.css');
 
 :root {
  --main-color: #42B6FF;
@@ -73,8 +78,20 @@ a:hover, button:hover {
     position: absolute;
     right: 0;
 }
+/* Section */
+
+.section {
+    margin-top: 45px;
+}
+.section__heading {
+    font-weight: 700;
+}
+
+.bullet-img {
+    display: inline-block;
+}
 /* About */
-.section:first-child {
+.first-section {
     margin-top: 50px;
     display: grid;
 }
@@ -89,18 +106,7 @@ a:hover, button:hover {
     color: #fff;
     border-radius: 35px;
 }
-/* Section */
 
-.section:not(:first-child) {
-    margin-top: 45px;
-}
-.section__heading {
-    font-weight: 700;
-}
-
-.bullet-img {
-    display: inline-block;
-}
 
 /* Education&Skills */
 
