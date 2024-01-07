@@ -1,14 +1,14 @@
 :root {
  --bg-color: #fff;
  --text-color: #104993;
- --main-color: #42B6FF;
+ --main-color: #139FEC;
  --accent-color: #FF2E47;
 }
 
 .header {
+    border-bottom: solid 5px var(--accent-color);
     background-color: var(--main-color);
     color: var(--bg-color);
-    border-bottom: solid 5px var(--accent-color);
 }
    
 .main {

@@ -1,0 +1,23 @@
+/* stylelint-disable selector-class-pattern */
+@media screen and (max-width: 320px) {
+  /* Header */
+
+  .header__nav {
+    display: none;
+  }
+
+  /* Main */
+  .first-section {
+    grid-template-areas: 
+    "heading heading"
+    "photo ."
+    "text  ."
+    "button .";
+  }
+
+  .first-section__btn {
+    width: 120px;
+    height: 50px;
+    margin-top: 20px;
+  }
+}

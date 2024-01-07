@@ -46,15 +46,24 @@
         <div class="main__container container">
             <button  class="up-arrow-btn"></button>
             <section class="section first-section">
-                <h1 class="section__heading"><span class="span--accent-color">Hi, I’m </span><span
-                        class="span--main-color">Lyubov Nefyodova</span>
+                <h1 class="section__heading first-section__heading"><span class="span--accent-color">Hi, I’m </span><span
+                        class="span--main-color">Lyubov Nefyodova</span><br>
                     Junior Frontend Developer</h1>
-                <img class="avatar-img" src="images/main/my-avatar.png" alt="Lyubov Nefyodova avatar image">
-                <p class="section__paragraph">I aspire to become a qualified frontend developer with strong technical
+                <img class="avatar-img" src="images/main/first-section/my-avatar-211px-211px-large.jpg"
+                srcset="
+                images/main/first-section/my-avatar-130px-130px-small.jpg 130w,
+                images/main/first-section/my-avatar-150px-150px-medium.jpg 150w,
+                images/main/first-section/my-avatar-211px-211px-large.jpg 211w
+                "
+                sizes="(max-width: 320px) 130px,
+                (max-width: 768px) and (min-width: 321px) 150px,
+                211px"
+                 alt="Lyubov Nefyodova avatar image">
+                <p class="section__paragraph first-section__paragraph">I aspire to become a qualified frontend developer with strong technical
                     skills and good performance as a team member.</p>
-                <button class="section__btn">Contact me</button>
+                <button class="first-section__btn">Contact me</button>
             </section>
-            <section class="section">
+            <section class="section" id="about">
                 <h2 class="section__heading">About me</h2>
                 <div class="section__content">
                     <p class="section__paragraph">I’m junior front-end developer interested in continuous learning and
@@ -62,7 +71,7 @@
                         soft skills are effective communication and flexibility in teamwork.</p>
                 </div>
             </section>
-            <section class="section">
+            <section class="section" id="education&skills">
                 <h2 class="section__heading">Education & Skills</h2>
                 <div class="section__content">
                     <ul>
@@ -129,11 +138,21 @@
                     </ul>
                 </div>
             </section>
-            <section class="section">
+            <section class="section" id="projects">
                 <h2 class="section__heading">Projects</h2>
                 <div class="section__content projects-wrapper">
                     <a href="" class="project">
-                        <img src="" alt="Your Profile" class="project__img">
+                        <img class="project__img"
+                         src="images/main/projects/your-profile-img-350px-210px-large.jpg"
+                         srcset="
+                         images/main/projects/your-profile-img-260px-156px-small.jpg 260w,
+                         images/main/projects/your-profile-img-300px-180px-medium.jpg 300w,
+                         images/main/projects/your-profile-img-350px-210px-large.jpg 350w
+                         "
+                         sizes="(max-width: 320px) 260px,
+                         (max-width: 768px) and (min-width: 321px) 300px,
+                         350px"
+                         alt="Your Profile">
                         <p class="project__name">Your Profile</p>
                         <ul class="project__techs">
                             <li class="techs__item">
@@ -144,7 +163,17 @@
                         </ul>
                     </a>
                     <a href="" class="project">
-                        <img src="" alt="Pizza Market" class="project__img">
+                        <img class="project__img"
+                         src="images/main/projects/pizza-market-img-260px-156px-small.jpg"
+                         srcset="
+                         images/main/projects/pizza-market-img-260px-156px-small.jpg 260w,
+                         images/main/projects/pizza-market-img-300px-180-medium.jpg 300w,
+                         images/main/projects/pizza-market-img-350px-210-large.jpg 350w
+                         "
+                         sizes="(max-width: 320px) 260px,
+                         (max-width: 768px) and (min-width: 321px) 300px,
+                         350px"
+                         alt="Pizza Market">
                         <p class="project__name">Pizza Market</p>
                         <ul class="project__techs">
                             <li class="techs__item">
@@ -155,7 +184,17 @@
                         </ul>
                     </a>
                     <a href="" class="project">
-                        <img src="" alt="Computer Course" class="project__img">
+                        <img class="project__img"
+                         src="images/main/projects/computer-building-course-img-350px-210px-large.jpg"
+                         srcset="
+                        images/main/projects/computer-building-course-img-260px-156px-small.jpg 260w,
+                        images/main/projects/computer-building-course-img-300px-180px-medium.jpg 300w,
+                        images/main/projects/computer-building-course-img-350px-210px-large.jpg 350w
+                        "
+                        sizes="(max-width: 320px) 260px,
+                        (max-width: 768px) and (min-width: 321px) 300px,
+                        350px"
+                        alt="Computer Course">
                         <p class="project__name">Computer Course</p>
                         <ul class="project__techs">
                             <li class="techs__item">
@@ -166,7 +205,15 @@
                         </ul>
                     </a>
                     <a href="" class="project">
-                        <img src="" alt="Safari" class="project__img">
+                        <img  class="project__img" src="images/main/projects/safari-img-350px-210px-large.jpg"
+                        srcset="
+                        images/main/projects/safari-img-260px-156px-small.jpg 260w,
+                        images/main/projects/safari-img-300px-180px-medium.jpg 300w,
+                        images/main/projects/safari-img-350px-210px-large.jpg 350w
+                        "
+                        sizes="(max-width: 320px) 260px,
+                        (max-width: 768px) and (min-width: 321px) 300px,
+                        350px" alt="Safari">
                         <p class="project__name">Safari</p>
                         <ul class="project__techs">
                             <li class="techs__item">html</li>
@@ -174,7 +221,15 @@
                         </ul>
                     </a>
                     <a href="" class="project">
-                        <img src="" alt="Relvise" class="project__img">
+                        <img class="project__img" src="images/main/projects/relvise-img-350px-210px-large.jpg" 
+                        srcset="
+                        images/main/projects/relvise-img-260px-156px-small.jpg 260w,
+                        images/main/projects/relvise-img-300px-180px-medium.jpg 300w,
+                        images/main/projects/relvise-img-350px-210px-large.jpg 350w
+                        "
+                        sizes="(max-width: 320px) 260px,
+                        (max-width: 768px) and (min-width: 321px) 300px,
+                        350px" alt="Relvise">
                         <p class="project__name">Relvise</p>
                         <ul class="project__techs">
                             <li class="techs__item">html</li>
@@ -182,7 +237,15 @@
                         </ul>
                     </a>
                     <a href="" class="project">
-                        <img src="" alt="Expoforum" class="project__img">
+                        <img class="project__img" src="images/main/projects/expoforum-img-350px-210px-large.jpg"
+                        srcset="
+                        images/main/projects/expoforum-img-260px-156px-small.jpg 260w,
+                        images/main/projects/expoforum-img-300px-180px-medium.jpg 300w,
+                        images/main/projects/expoforum-img-350px-210px-large.jpg 350w
+                        "
+                        sizes="(max-width: 320px) 260px,
+                        (max-width: 768px) and (min-width: 321px) 300px,
+                        350px" alt="Expoforum">
                         <p class="project__name">Expoforum</p>
                         <ul class="project__techs">
                             <li class="techs__item">html</li>
@@ -191,7 +254,7 @@
                     </a>
                 </div>
             </section>
-            <section class="section">
+            <section class="section" id="code">
                 <h2 class="section__heading">Code sample</h2>
                 <div class="section__content">
                     <p class="code">
@@ -224,7 +287,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="section">
+            <section class="section" id="contacts">
                 <h2 class="section__heading">Contacts</h2>
                 <div class="section__content">
                     <ul>

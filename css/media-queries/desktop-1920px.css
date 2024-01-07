@@ -1,11 +1,15 @@
+/* stylelint-disable selector-class-pattern */
 @media screen and (min-width: 1001px) {
     body {
         font-size: 18px;
     }
+
     h1 {
         font-size: 36px;
+
         /* width: 484px; */
     }
+
     .container {
         width: 1200px;
         margin: 0 auto;
@@ -13,23 +17,43 @@
 
     /* Header */
     .header {
-        font-size: 20px;
         height: 112px;
+        font-size: 20px;
     }
+    
     .lang-switcher {
         margin-left: 25px;
     }
     
     /* Main */
     .first-section {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+        "heading photo"
+        "text photo"
+        "button photo";
     }
-    .avatar-img {
-        grid-row-end: span 3;
+    
+    .first-section__paragraph {
+        margin-top: 15px;
     }
+
+    .first-section__btn {        
+    width: 150px;
+    height: 60px;
+    margin-top: 30px;
+    }
+
+    .section {
+        width: 732px;
+        margin-left: 200px;
+    }
+
     .section__heading {
         font-size: 26px;
+    }
+
+    #projects {
+        width: 1200px;
     }
 
     /* Footer */
