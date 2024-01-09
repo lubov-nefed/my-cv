@@ -21,6 +21,10 @@
         font-size: 20px;
     }
     
+    .burger__btn, .burger__nav{
+        display: none;
+    }
+
     .lang-switcher {
         margin-left: 25px;
     }

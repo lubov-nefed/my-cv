@@ -15,8 +15,29 @@
 </head>
 
 <body>
+    <nav class="burger__nav">
+        <header class="burger__header">            
+            <h2 class="burger__heading">Lyubov Nefyodova</h2>
+            <button class="burger__close-btn">
+                <img src="images/header/close-icon-43px-43px-large.svg"
+                srcset="close-icon-30px-30px-small.svg 30w,
+                images/header/close-icon-43px-43px-large.svg 43w"
+                sizes="(max-width: 320px) 30px, 43px" alt="Close">
+            </button>
+        </header>
+        <ul class="burger__list">
+            <li class="burger__li"><a href="#about" class="burger__anchor">About</a></li>
+            <li class="burger__li"><a href="#education&skills" class="burger__anchor">Education & Skills</a></li>
+            <li class="burger__li"><a href="#projects" class="burger__anchor">Projects</a></li>
+            <li class="burger__li"><a href="#code" class="burger__anchor">Code</a></li>
+            <li class="burger__li"><a href="#contacts" class="burger__anchor">Contacts</a></li>
+        </ul>
+    </nav>
     <header class="header">
         <div class="header__container container">
+            <button class="burger__btn">
+                <img class="burger__img" src="images/header/burger-icon-40px-24px-large.svg" alt="Open navigation menu">
+            </button>
             <nav class="header__nav">
                 <ul class="header__list">
                     <li class="header__li"><a href="#about" class="header__anchor">About</a></li>

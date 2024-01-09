@@ -5,6 +5,16 @@
   .header__nav {
     display: none;
   }
+  
+.burger__nav{
+  display: block;
+  visibility: hidden;
+}
+
+.burger__header  {
+  padding: 30px;
+  font-size: 22px;
+}
 
   /* Main */
   .first-section {

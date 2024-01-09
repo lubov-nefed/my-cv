@@ -1,1 +1,1 @@
-Hello, I'm Lyubov Nefyodova. Welcome to my CV [lubov-nefed.github.io/my-cv/index.html]​(lubov-nefed.github.io/my-cv/index.html)
+Hello, I'm Lyubov Nefyodova. Welcome to [my CV]​(https://lubov-nefed.github.io/my-cv/index.html)

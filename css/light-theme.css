@@ -1,3 +1,4 @@
+/* stylelint-disable selector-class-pattern */
 :root {
  --bg-color: #fff;
  --text-color: #104993;
@@ -10,7 +11,18 @@
     background-color: var(--main-color);
     color: var(--bg-color);
 }
-   
+
+.burger__header {
+    border-bottom: solid 5px var(--accent-color);
+    background-color: var(--main-color);
+    color: var(--bg-color);
+}
+
+.burger__nav {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
 .main {
     color: var(--text-color);
 }
