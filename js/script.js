@@ -14,6 +14,8 @@ const burgerNav = document.querySelector('.burger__nav');
 const openBurgerMenu = () => {
   console.log(window.getComputedStyle(burgerNav).visibility);
   burgerNav.style.visibility = 'visible';
+  burgerNav.style.marginTop = '0';
+  document.querySelector('.body').classList.add('overflow-hidden');
 };
 
 const burgerBtn = document.querySelector('.burger__btn');
@@ -22,6 +24,8 @@ burgerBtn.addEventListener('click', openBurgerMenu);
 const closeBurgerMenu = () => {
   console.log(window.getComputedStyle(burgerNav).visibility);
   burgerNav.style.visibility = 'hidden';
+  burgerNav.style.marginTop = '-100%';
+  document.querySelector('.body').classList.remove('overflow-hidden');
 };
 
 const burgerCloseBtn = document.querySelector('.burger__close-btn');

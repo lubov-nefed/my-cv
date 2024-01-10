@@ -1,5 +1,9 @@
 /* stylelint-disable selector-class-pattern */
-@media screen and (min-width: 321px) and (max-width: 480px) { 
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  .container {
+    max-width: 388px;
+  }
+  
   /* Header */
 
   .header__nav {
@@ -30,8 +34,37 @@
     margin-top: 25px;
     }
 
-    
+  .first-section__heading {
+    font-size: 30px;
+  }
+
+      
     .first-section__paragraph {
       margin-top: 25px;
   }
+    
+  .section {
+      margin-top: 45px;
+  }
+
+
+  .education-skills-wrapper {
+    grid-template: 
+    'education'
+    'courses'
+    'skills';
+  }
+
+.projects-wrapper {
+    grid-template: 
+    'project1'
+    'project2'
+    'project3'
+    'project4'
+    'project5'
+    'project6';
+}
+
+
+
   }

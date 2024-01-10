@@ -1,20 +1,23 @@
 /* stylelint-disable selector-class-pattern */
 @media screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
+    max-width: 670px;
+  }
   /* Header */
 
   .header__nav {
     display: none;
   }
   
-.burger__nav{
-  display: block;
-  visibility: hidden;
-}
+  .burger__nav{
+    display: block;
+    visibility: hidden;
+  }
 
-.burger__header  {
-  padding: 40px 50px;
-  font-size: 26px;
-}
+  .burger__header  {
+    padding: 40px 50px;
+    font-size: 26px;
+  }
 
   /* Main */
   .first-section {
@@ -24,6 +27,10 @@
     "button photo";
   }
 
+  .first-section__heading {
+    font-size: 30px;
+  }
+
   .first-section__btn {        
     width: 150px;
     height: 60px;
@@ -31,7 +38,26 @@
     }
 
     
-    .first-section__paragraph {
-      margin-top: 15px;
+  .first-section__paragraph {
+    margin-top: 15px;
   }
+    
+    .section {
+        margin-top: 45px;
+    }
+
+    .education-skills-wrapper {
+        grid-template: 
+        'education education'
+        'courses skills';
+    }
+
+    .projects-wrapper {
+        grid-template: 
+        'project1 project2'
+        'project3 project4'
+        'project5 project6';
+    }   
+
+    
 }

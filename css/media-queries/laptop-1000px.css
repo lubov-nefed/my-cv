@@ -1,5 +1,9 @@
 /* stylelint-disable selector-class-pattern */
 @media screen and (min-width: 769px) and (max-width: 1000px){
+  .container {
+    max-width: 940px;
+  }
+
   /* Header */
 
   .header__nav {
@@ -24,6 +28,10 @@
     "button photo";
 }
 
+.first-section__heading {
+    font-size: 36px;
+}
+
   .first-section__btn {        
     width: 150px;
     height: 60px;
@@ -34,4 +42,22 @@
     .first-section__paragraph {
       margin-top: 15px;
   }
+    
+  .section {
+      margin-top: 45px;
+  }
+
+  .education-skills-wrapper {
+      grid-template: 
+      'education education'
+      'courses skills';
+  }
+
+    .projects-wrapper {
+        grid-template: 
+        'project1 project2'
+        'project3 project4'
+        'project5 project6';
+    }
+    
 }

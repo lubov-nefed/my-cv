@@ -23,14 +23,20 @@ a:hover, button:hover {
     margin: 0 auto;
 }
 
+.overflow-hidden {
+    overflow: hidden;
+}
+
 /* Burger Menu */
 .burger__nav {
     position: absolute;
     z-index: 1;
     width: 100%;
     height: 100%;
+    margin-top: -100%;
     font-size: 20px;
     font-weight: 500;
+    transition: all 0.5s;
 }
 
 .burger__header {
@@ -67,7 +73,7 @@ a:hover, button:hover {
 
 .header__nav {
     padding-top: 4px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .header__list {
@@ -124,7 +130,9 @@ a:hover, button:hover {
 }
 
 .first-section__heading {
+    font-weight: 900;
     grid-area: heading;
+    line-height: normal;
 }
 
 .first-section__paragraph {
@@ -145,12 +153,11 @@ a:hover, button:hover {
 
 /* Section */
 
-.section {
-    margin-top: 45px;
-}
 
 .section__heading {
+    margin-bottom: 10px;
     font-weight: 700;
+    line-height: normal;
 }
 
 .bullet-img {
@@ -161,15 +168,39 @@ a:hover, button:hover {
 
 
 /* Education&Skills */
+.education-skills-wrapper {
+    display: grid;
+}
+
+.education {
+    grid-area: education;
+}
+
+.ed-li {
+    padding-left: 20px;
+    margin-bottom: 15px;
+    background: url('../images/main/bullet-icon.svg') no-repeat 0 50%;
+    line-height: 125%;
+}
+
+.courses-li {
+    line-height: 125%;
+}
 
 /* Courses */
-
+.courses {
+    grid-area: courses;
+}
 
 /* Skills */
+.skills {
+    grid-area: skills;
+}
 
 /* Projects */
 .projects-wrapper {
     display: grid;
+    place-items: center;
 }
 
 .project {
@@ -190,6 +221,31 @@ a:hover, button:hover {
     color: var(--accent-color);
     font-size: 12px;
 }
+
+.project1 {
+    grid-area: project1;
+}
+
+.project2 {
+    grid-area: project2;
+}
+
+.project3 {
+    grid-area: project3;
+}
+
+.project4 {
+    grid-area: project4;
+}
+
+.project5 {
+    grid-area: project5;
+}
+
+.project6 {
+    grid-area: project6;
+}
+
 
 /* Code */
 .code {
