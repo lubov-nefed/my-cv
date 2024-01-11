@@ -50,24 +50,32 @@
   }
 
   .first-section__heading {
+    margin-bottom: 25px;
     font-size: 30px;
   }
-
-      
-  .first-section__paragraph {
-    margin-top: 25px;
-  }
     
+  .first-section__paragraph {
+    max-width: 162px;
+  }
+
   .section {
     margin-top: 45px;
   }
 
+  .section__heading {
+    margin-bottom: 20px;
+    font-size: 26px;
+  }
 
   .education-skills-wrapper {
     grid-template: 
       'education'
       'courses'
       'skills';
+  }
+
+  .courses__li:not(:first-child) {
+    margin-top: 20px;
   }
 
   .projects-wrapper {
@@ -79,6 +87,12 @@
       'project5'
       'project6';
   }
+
+  
+  #projects .section__heading {
+    margin-left: 35%;
+}
+
 
   .code {
     padding: 30px;

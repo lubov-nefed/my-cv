@@ -37,6 +37,7 @@
 
   
   .first-section {
+    max-width: 665px;
     grid-template-areas: 
     "heading photo"
     "text photo"
@@ -55,12 +56,19 @@
 
     
   .first-section__paragraph {
+    max-width: 380px;
     margin-top: 15px;
   }
     
     .section {
         margin-top: 45px;
     }
+    
+    .section__heading {
+      margin-bottom: 10px;
+      font-size: 26px;
+  }
+
 
     .education-skills-wrapper {
         grid-template: 
@@ -75,6 +83,10 @@
         'project5 project6';
     }
 
+    #projects .section__heading {
+      margin-left: 42%;
+  }
+  
     .code {
         padding: 30px 245px 35px 30px;
     }   

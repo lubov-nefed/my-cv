@@ -1,5 +1,6 @@
 /* stylelint-disable selector-class-pattern */
 @import url('media-queries/desktop-1920px.css');
+@import url('media-queries/laptop-1200px.css');
 @import url('media-queries/laptop-1000px.css');
 @import url('media-queries/tablet-768px.css');
 @import url('media-queries/mobile-m-480px.css');
@@ -154,7 +155,6 @@ a:hover, button:hover {
 
 
 .section__heading {
-    margin-bottom: 10px;
     font-weight: 700;
     line-height: normal;
 }
@@ -182,13 +182,20 @@ a:hover, button:hover {
     line-height: 125%;
 }
 
-.courses-li {
-    line-height: 125%;
-}
 
 /* Courses */
 .courses {
     grid-area: courses;
+}
+
+.courses__li {
+    display: grid;
+    grid-template-columns: 0.75fr 2fr;
+    line-height: 125%;
+}
+
+.courses__paragraph {
+    display: inline-block;
 }
 
 /* Skills */
