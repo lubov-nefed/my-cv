@@ -33,10 +33,13 @@
             <li class="burger__li"><a href="#contacts" class="burger__anchor">Contacts</a></li>
         </ul>
     </nav>
-    <header class="header">
+    <header class="header" id="header">
         <div class="header__container container">
             <button class="burger__btn">
-                <img class="burger__img" src="images/header/burger-icon-40px-24px-large.svg" alt="Open navigation menu">
+                <img class="burger__img" src="images/header/burger-icon-40px-24px-large.svg"
+                srcset="images/header/burger-icon-25px-19px-small.svg 25w,
+                images/header/burger-icon-40px-24px-large.svg 40w"
+                sizes="(max-width: 320px) 25px, 40px" alt="Open navigation menu">
             </button>
             <nav class="header__nav">
                 <ul class="header__list">
@@ -50,7 +53,11 @@
             </nav>
             <div class="header-btns-container">
                 <button class="theme-switcher">
-                    <img src="images/header/theme-switch-icon--light.svg" alt="Switch theme"
+                    <img src="images/header/theme-switch-icon-large-40px-40px--light.svg"
+                    srcset="
+                    images/header/theme-switch-icon-small-30px-30px--light.svg 30w,
+                    images/header/theme-switch-icon-large-40px-40px--light.svg 40w"
+                    sizes="(max-width: 320px) 30px, 40px" alt="Switch theme"
                         class="theme-switcher__img">
                 </button>
                 <button class="lang-switcher" title="Switch language">
@@ -65,7 +72,7 @@
     </header>
     <main class="main">
         <div class="main__container container">
-            <button  class="up-arrow-btn"></button>
+            <a href="#header"  class="up-arrow-btn"></a>
             <section class="section main__section first-section">
                 <h1 class="first-section__heading"><span class="span--accent-color">Hi, I’m </span><span
                         class="span--main-color">Lyubov Nefyodova</span><br>
@@ -339,7 +346,7 @@
     </main>
     <footer class="footer">
         <div class="footer__container container">
-            <p>© 2022 Lyubov Nefyodova</p>
+            <p class="footer__copyright">© 2022 Lyubov Nefyodova</p>
             <ul class="footer__contacts">
                 <li class="footer__li"><a href="" class="footer__link"><img src="images/footer/viber-icon.svg"
                             alt="Contact via Viber" class="footer__img"></a> </li>

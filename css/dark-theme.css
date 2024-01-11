@@ -12,6 +12,7 @@ body {
 }
 
 
+/* Header */
 .burger__header {
     border-bottom: solid 5px var(--accent-color);
 }
@@ -19,3 +20,11 @@ body {
 .burger__nav {
     background-color: var(--bg-color);
 }
+
+/* Main */
+.up-arrow-btn {
+    background: url('../images/main/up-arrow-icon--dark.svg') no-repeat;
+    background-size: cover;
+}
+
+/* Footer */

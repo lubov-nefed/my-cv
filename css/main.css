@@ -6,9 +6,9 @@
 @import url('media-queries/mobile-s-320px.css');
 
 :root {
- --main-color: #139FEC;
- --accent-color: #FF2E47;
- --code-string-color: #B32032;
+    --main-color: #139FEC;
+    --accent-color: #FF2E47;
+    --code-string-color: #B32032;
 }
 
 body {
@@ -61,10 +61,6 @@ a:hover, button:hover {
     padding: 6px 13px;
 }
 
-.header {
-    padding-top: 30px;
-}
-
 /* Header */
 .header__container {
     display: flex;
@@ -73,6 +69,7 @@ a:hover, button:hover {
 
 .header__nav {
     padding-top: 4px;
+    margin-left: 20px;
     font-weight: 400;
 }
 
@@ -118,8 +115,9 @@ a:hover, button:hover {
 
 /* Main */
 .up-arrow-btn {
-    position: absolute;
-    right: 0;
+    position: fixed;
+    top: 60%;
+    right: 5%;
 }
 
 /* First Section */
@@ -140,6 +138,7 @@ a:hover, button:hover {
 }
 
 .avatar-img {
+    min-width: 130px;
     grid-area: photo;
 }
 
@@ -249,6 +248,7 @@ a:hover, button:hover {
 
 /* Code */
 .code {
+    border-radius: 10px;
     background-color: #E4EBF1;
     color: #104993;
     font-family: monospace;
@@ -273,10 +273,14 @@ a:hover, button:hover {
 /* Footer */
 
 .footer__container {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+}
+
+.footer__copyright {
+    grid-area: footer__copyright;
 }
 
 .footer__contacts {
     display: flex;
+    grid-area: footer__contacts;
 }

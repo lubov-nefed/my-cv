@@ -6,6 +6,7 @@
  --accent-color: #FF2E47;
 }
 
+/* Header */
 .header {
     border-bottom: solid 5px var(--accent-color);
     background-color: var(--main-color);
@@ -23,6 +24,19 @@
     color: var(--text-color);
 }
 
+/* Main */
 .main {
     color: var(--text-color);
+}
+
+.up-arrow-btn {
+    background: url('../images/main/up-arrow-icon--light.svg') no-repeat;
+    background-size: cover;
+}
+
+/* Footer */
+.footer {
+    border-top: solid 5px var(--accent-color);
+    background-color: var(--main-color);
+    color: var(--bg-color);
 }

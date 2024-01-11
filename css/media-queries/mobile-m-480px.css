@@ -1,70 +1,107 @@
 /* stylelint-disable selector-class-pattern */
 @media screen and (min-width: 321px) and (max-width: 480px) {
   .container {
-    max-width: 388px;
+    max-width: 440px;
+    padding: 0 15px;
   }
   
   /* Header */
+  .header {
+    height: 117px;
+    padding-top: 30px;
+  }
 
   .header__nav {
     display: none;
   }
   
-.burger__nav{
-  display: block;
-  visibility: hidden;
-}
+  .burger__nav{
+    display: block;
+    visibility: hidden;
+  }
 
-.burger__header  {
-  padding: 40px 50px;
-  font-size: 26px;
-}
+  .burger__header  {
+    padding: 40px 50px;
+    font-size: 26px;
+  }
+
+  .lang-switcher {
+    margin-left: 25px;
+  }
+
 
   /* Main */
+  .up-arrow-btn {
+    width: 50px;
+    height: 50px;
+  }
+
   .first-section {
     grid-template-areas: 
-    "heading heading"
-    "text photo"
-    "button photo";
+      "heading heading"
+      "text photo"
+      "button photo";
   }
 
   .first-section__btn {        
     width: 150px;
     height: 60px;
     margin-top: 25px;
-    }
+  }
 
   .first-section__heading {
     font-size: 30px;
   }
 
       
-    .first-section__paragraph {
-      margin-top: 25px;
+  .first-section__paragraph {
+    margin-top: 25px;
   }
     
   .section {
-      margin-top: 45px;
+    margin-top: 45px;
   }
 
 
   .education-skills-wrapper {
     grid-template: 
-    'education'
-    'courses'
-    'skills';
+      'education'
+      'courses'
+      'skills';
   }
 
-.projects-wrapper {
+  .projects-wrapper {
     grid-template: 
-    'project1'
-    'project2'
-    'project3'
-    'project4'
-    'project5'
-    'project6';
-}
-
-
-
+      'project1'
+      'project2'
+      'project3'
+      'project4'
+      'project5'
+      'project6';
   }
+
+  .code {
+    padding: 30px;
+  }
+
+
+  /* Footer */
+  .footer {
+    height: 205px;
+    padding-top: 50px;
+    margin-top: 160px;
+  }
+
+  .footer__container {
+    grid-gap: 30px;
+    grid-template: 
+      'footer__contacts'
+      'footer__copyright';
+  }
+
+  .footer__li:not(:last-child) {
+    margin-right: 20px;
+  }
+  
+
+}

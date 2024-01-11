@@ -12,12 +12,14 @@
 
     .container {
         max-width: 1200px;
+        padding: 0 20px;
         margin: 0 auto;
     }
 
     /* Header */
     .header {
-        height: 112px;
+        height: 117px;
+        padding-top: 30px;
         font-size: 20px;
     }
     
@@ -25,16 +27,25 @@
         display: none;
     }
 
+    .header-btns-container {
+        margin-right: 20px;
+    }
+
     .lang-switcher {
         margin-left: 25px;
     }
     
     /* Main */
+    .up-arrow-btn {
+        width: 50px;
+        height: 50px;
+    }
+
     .first-section {
         grid-template-areas: 
-        "heading photo"
-        "text photo"
-        "button photo";
+            "heading photo"
+            "text photo"
+            "button photo";
     }
     
     .first-section__paragraph {
@@ -42,9 +53,9 @@
     }
 
     .first-section__btn {        
-    width: 150px;
-    height: 60px;
-    margin-top: 30px;
+        width: 150px;
+        height: 60px;
+        margin-top: 30px;
     }
 
     .first-section__heading {
@@ -67,8 +78,8 @@
     .education-skills-wrapper {
         width: 718px;
         grid-template: 
-        'education education'
-        'courses skills';
+            'education education'
+            'courses skills';
     }
 
     #projects {
@@ -81,9 +92,32 @@
 
     .projects-wrapper {
         grid-template: 
-        'project1 project2 project3'
-        'project4 project5 project6';
+            'project1 project2 project3'
+            'project4 project5 project6';
+    }
+
+    .code {
+        padding: 30px 245px 35px 30px;
     }
 
     /* Footer */
+    .footer {
+        height: 205px;
+        padding-top: 70px;
+        margin-top: 160px;
+    }
+
+    .footer__container {
+        grid-template: 
+        'footer__copyright footer__contacts';
+    }
+
+    .footer__contacts {
+        justify-self: right;
+    }
+
+    .footer__li:not(:last-child) {
+      margin-right: 20px;
+    }
+    
 }
