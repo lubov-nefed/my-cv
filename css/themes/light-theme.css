@@ -30,7 +30,7 @@
 }
 
 .up-arrow-btn {
-    background: url('../images/main/up-arrow-icon--light.svg') no-repeat;
+    background: url('../../images/main/up-arrow-icon--light.svg') no-repeat;
     background-size: cover;
 }
 

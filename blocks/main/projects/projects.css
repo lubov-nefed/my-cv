@@ -1,0 +1,51 @@
+/* stylelint-disable selector-class-pattern */
+
+/* Projects */
+.projects-wrapper {
+  display: grid;
+  place-items: center;
+}
+
+.project {
+  display: grid;
+}
+
+.project__name {
+  display: inline-block;
+}
+
+.project__techs {
+  display: inline-flex;
+}
+
+.techs__item {
+  border: solid 1px var(--accent-color);
+  border-radius: 10px;
+  color: var(--accent-color);
+  font-size: 12px;
+}
+
+.project1 {
+  grid-area: project1;
+}
+
+.project2 {
+  grid-area: project2;
+}
+
+.project3 {
+  grid-area: project3;
+}
+
+.project4 {
+  grid-area: project4;
+}
+
+.project5 {
+  grid-area: project5;
+}
+
+.project6 {
+  grid-area: project6;
+}
+

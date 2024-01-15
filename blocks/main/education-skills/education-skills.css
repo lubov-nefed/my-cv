@@ -1,0 +1,38 @@
+/* stylelint-disable selector-class-pattern */
+
+/* Education&Skills */
+.education-skills-wrapper {
+  display: grid;
+}
+
+.education {
+  grid-area: education;
+}
+
+.ed-li {
+  padding-left: 20px;
+  margin-bottom: 15px;
+  background: url('../images/main/bullet-icon.svg') no-repeat 0 50%;
+  line-height: 125%;
+}
+
+
+/* Courses */
+.courses {
+  grid-area: courses;
+}
+
+.courses__li {
+  display: grid;
+  grid-template-columns: 0.75fr 2fr;
+  line-height: 125%;
+}
+
+.courses__paragraph {
+  display: inline-block;
+}
+
+/* Skills */
+.skills {
+  grid-area: skills;
+}

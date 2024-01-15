@@ -1,0 +1,21 @@
+/* stylelint-disable selector-class-pattern */
+
+/* Code */
+.code {
+  border-radius: 10px;
+  background-color: #E4EBF1;
+  color: #104993;
+  font-family: monospace;
+}
+
+.span--main-color {
+  color: var(--main-color);
+}
+
+.span--accent-color {
+  color: var(--accent-color);    
+}
+
+.span--code-string-color {
+  color: var(--code-string-color);
+}

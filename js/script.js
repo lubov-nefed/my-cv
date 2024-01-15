@@ -1,8 +1,8 @@
 /* Theme switcher */
 const switchTheme = () => {
   const themeStyleSheet = document.querySelector('#theme-styles');
-  if (themeStyleSheet.getAttribute('href') === 'css/light-theme.css') themeStyleSheet.setAttribute('href', 'css/dark-theme.css');
-  else themeStyleSheet.setAttribute('href', 'css/light-theme.css');
+  if (themeStyleSheet.getAttribute('href') === 'css/themes/light-theme.css') themeStyleSheet.setAttribute('href', 'css/themes/dark-theme.css');
+  else themeStyleSheet.setAttribute('href', 'css/themes/light-theme.css');
 };
 const themeBtn = document.querySelector('.theme-switcher');
 themeBtn.addEventListener('click', switchTheme);

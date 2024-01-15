@@ -23,7 +23,7 @@ body {
 
 /* Main */
 .up-arrow-btn {
-    background: url('../images/main/up-arrow-icon--dark.svg') no-repeat;
+    background: url('../../images/main/up-arrow-icon--dark.svg') no-repeat;
     background-size: cover;
 }
 

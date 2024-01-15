@@ -1,0 +1,12 @@
+@import url('first-section/first-section.css');
+@import url('education-skills/education-skills.css');
+@import url('projects/projects.css');
+@import url('code/code.css');
+
+/* Main */
+.up-arrow-btn {
+  position: fixed;
+  top: 60%;
+  right: 5%;
+}
+

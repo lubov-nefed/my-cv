@@ -1,0 +1,16 @@
+/* stylelint-disable selector-class-pattern */
+
+/* Footer */
+
+.footer__container {
+  display: grid;
+}
+
+.footer__copyright {
+  grid-area: footer__copyright;
+}
+
+.footer__contacts {
+  display: flex;
+  grid-area: footer__contacts;
+}
