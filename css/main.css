@@ -21,6 +21,7 @@ a:hover, button:hover {
 }
 
 .container {
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -63,6 +64,10 @@ a:hover, button:hover {
 }
 
 /* Header */
+.header {
+    font-size: 20px;    
+}
+
 .header__container {
     display: flex;
     justify-content: space-between;
@@ -70,8 +75,7 @@ a:hover, button:hover {
 
 .header__nav {
     padding-top: 4px;
-    margin-left: 20px;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .header__list {
@@ -91,7 +95,7 @@ a:hover, button:hover {
     display: inline-flex;
     align-items: center;
     color: #fff;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .lang-switcher__rectangle {

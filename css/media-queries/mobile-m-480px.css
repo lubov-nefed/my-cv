@@ -1,7 +1,10 @@
 /* stylelint-disable selector-class-pattern */
 @media screen and (min-width: 321px) and (max-width: 480px) {
+  body {
+  font-size: 18px;
+}
+
   .container {
-    max-width: 440px;
     padding: 0 15px;
   }
   

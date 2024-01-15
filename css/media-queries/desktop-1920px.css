@@ -4,21 +4,14 @@
       font-size: 18px;
   }
 
-  h1 {
-      font-size: 36px;
-  }
-
   .container {
-      max-width: 1200px;
       padding: 0 20px;
-      margin: 0 auto;
   }
 
   /* Header */
   .header {
       height: 117px;
       padding-top: 30px;
-      font-size: 20px;
   }
   
   .burger__btn, .burger__nav{
