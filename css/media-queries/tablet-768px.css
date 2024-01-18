@@ -18,6 +18,17 @@
     display: none;
   }
   
+.theme-switcher {
+  width: 40px;
+  height: 40px;
+  background-image: url('../../images/header/theme-switch-icon-large-40px-40px--light.svg');
+  transition: all 0.5s ease;
+}
+
+.theme-switcher:hover {
+  background-image: url('../../images/header/theme-switch-icon-large-40px-40px--dark.svg')
+}
+
   .burger__nav{
     display: block;
     visibility: hidden;

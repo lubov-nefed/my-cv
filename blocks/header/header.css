@@ -21,6 +21,20 @@
   display: flex;
 }
 
+.header__li {
+  border-radius: 15px;
+  transition: all 0.8s ease;
+}
+
+.header__li:not(:first-child) {
+  margin-left: 10px;
+}
+
+.header__li:hover {
+  background-color: #fff;
+  color: var(--accent-color);
+}
+
 .header__anchor {
   padding: 6px 13px;
 }
@@ -45,6 +59,11 @@
   border-radius: 20px;
   margin: 0 10px;
   background-color: #fff;
+  transition: all 0.5s ease;
+}
+
+.lang-switcher:hover .lang-switcher__rectangle {
+  background-color: var(--accent-color);
 }
 
 .lang-switcher__circle {
@@ -56,4 +75,8 @@
   border-radius: 50%;
   background-color: var(--main-color);
   transition: all 0.3s ease;
+}
+
+.lang-switcher:hover .lang-switcher__circle {
+  background-color: #fff;
 }
