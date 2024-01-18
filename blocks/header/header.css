@@ -55,4 +55,5 @@
   height: 15px;
   border-radius: 50%;
   background-color: var(--main-color);
+  transition: all 0.3s ease;
 }
