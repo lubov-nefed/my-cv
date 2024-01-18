@@ -8,5 +8,9 @@
   position: fixed;
   top: 60%;
   right: 5%;
+  transition: all 0.3s ease;
 }
 
+.up-arrow-btn:hover {
+  background: url('../../images/main/up-arrow-icon--hovered.svg')
+}
