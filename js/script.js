@@ -61,3 +61,12 @@ const langSwitcherHandler = () => {
 
 const langSwitcher = document.querySelector('.lang-switcher');
 langSwitcher.addEventListener('click', langSwitcherHandler);
+
+/* Up arrow btn */
+const upArrowBtn = document.querySelector('.up-arrow-btn');
+const handleScroll = () => {
+  if (document.documentElement.scrollTop > 100) {
+    upArrowBtn.style.display = 'block';
+  } else upArrowBtn.style.display = 'none';
+};
+document.addEventListener('scroll', handleScroll);

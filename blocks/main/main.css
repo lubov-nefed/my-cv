@@ -5,6 +5,7 @@
 
 /* Main */
 .up-arrow-btn {
+  display: none;
   position: fixed;
   top: 60%;
   right: 5%;
