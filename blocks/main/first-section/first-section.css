@@ -28,13 +28,15 @@
   color: #fff;
   font-weight: 600;
   grid-area: button;
+  line-height: 325%;
+  text-align: center;
 }
 
 @media (pointer: fine) {
   .first-section__btn {    
   transition: all 0.5s ease;
   }
-  
+
   .first-section__btn:hover {
     background-color: var(--accent-color);
   }
