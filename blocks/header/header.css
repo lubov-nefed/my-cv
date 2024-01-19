@@ -48,10 +48,19 @@
 .theme-switcher {
   background-image: url('../../images/header/theme-switch-icon-large-40px-40px--light.svg');
   background-size: cover;
-  transition: all 0.5s ease;
 }
 
+@media (pointer:fine) {  
+  .theme-switcher {
+    transition: all 0.3s ease;
+  }
+  
 .theme-switcher:hover {
+  background-image: url('../../images/header/theme-switch-icon-large-40px-40px--dark.svg')
+}
+}
+
+.theme-switcher:active {
   background-image: url('../../images/header/theme-switch-icon-large-40px-40px--dark.svg')
 }
 
@@ -70,10 +79,9 @@
   border-radius: 20px;
   margin: 0 10px;
   background-color: #fff;
-  transition: all 0.5s ease;
 }
 
-.lang-switcher:hover .lang-switcher__rectangle {
+.lang-switcher:active .lang-switcher__rectangle {
   background-color: var(--accent-color);
 }
 
@@ -88,6 +96,16 @@
   transition: all 0.3s ease;
 }
 
+@media (pointer:fine) { 
+  .lang-switcher__rectangle {
+    transition: all 0.3s ease;
+  } 
+
+  .lang-switcher:hover .lang-switcher__rectangle {
+  background-color: var(--accent-color);
+}
+
 .lang-switcher:hover .lang-switcher__circle {
   background-color: #fff;
 }
+ }

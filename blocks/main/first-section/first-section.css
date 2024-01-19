@@ -28,9 +28,18 @@
   color: #fff;
   font-weight: 600;
   grid-area: button;
-  transition: all 0.5s ease;
 }
 
-.first-section__btn:hover {
+@media (pointer: fine) {
+  .first-section__btn {    
+  transition: all 0.5s ease;
+  }
+  
+  .first-section__btn:hover {
+    background-color: var(--accent-color);
+  }
+}
+
+.first-section__btn:active {
   background-color: var(--accent-color);
 }

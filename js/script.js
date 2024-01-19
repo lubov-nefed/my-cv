@@ -66,7 +66,7 @@ langSwitcher.addEventListener('click', langSwitcherHandler);
 const upArrowBtn = document.querySelector('.up-arrow-btn');
 const handleScroll = () => {
   if (document.documentElement.scrollTop > 100) {
-    upArrowBtn.style.display = 'block';
-  } else upArrowBtn.style.display = 'none';
+    upArrowBtn.style.opacity = '1';
+  } else upArrowBtn.style.opacity = '0';
 };
 document.addEventListener('scroll', handleScroll);
