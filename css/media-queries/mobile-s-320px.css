@@ -121,5 +121,20 @@
   .footer__li:not(:last-child) {
     margin-right: 10px;
   }
+
+  .footer__viber-link {
+    width: 25px;
+    height: 25px;
+  }
+
+  .footer__linkedin-link {
+    width: 25px;
+    height: 26px;
+  }
+  
+  .footer__github-link {
+    width: 26px;
+    height: 28px;
+  }
   
 }

@@ -5,11 +5,11 @@
 
 /* Main */
 .up-arrow-btn {
-  opacity: 0;
   position: fixed;
   top: 60%;
   right: 5%;
   background-size: cover;
+  opacity: 0;
   transition: all 0.3s ease;
 }
 
