@@ -1,8 +1,8 @@
 /* stylelint-disable selector-class-pattern */
 @media screen and (min-width: 481px) and (max-width: 768px) {   
   body {
-  font-size: 18px;
-}
+    font-size: 18px;
+  }
 
   .container {
     padding: 0 20px;
@@ -18,10 +18,10 @@
     display: none;
   }
   
-.theme-switcher {
-  width: 40px;
-  height: 40px;
-}
+  .theme-switcher {
+    width: 40px;
+    height: 40px;
+  }
 
   .burger__nav{
     display: block;
@@ -38,18 +38,17 @@
   }
 
   /* Main */
-    .up-arrow-btn {
-      width: 50px;
-      height: 50px;
+  .up-arrow-btn {
+    width: 50px;
+    height: 50px;
   }
 
-  
   .first-section {
     max-width: 665px;
     grid-template-areas: 
-    "heading photo"
-    "text photo"
-    "button photo";
+      "heading photo"
+      "text photo"
+      "button photo";
   }
 
   .first-section__heading {
@@ -60,7 +59,7 @@
     width: 150px;
     height: 60px;
     margin-top: 25px;
-    }
+  }
 
     
   .first-section__paragraph {
@@ -68,71 +67,82 @@
     margin-top: 15px;
   }
     
-    .section {
-        margin-top: 45px;
-    }
+  .section {
+    margin-top: 45px;
+  }
     
-    .section__heading {
-      margin-bottom: 10px;
-      font-size: 26px;
+  .section__heading {
+    margin-bottom: 10px;
+    font-size: 26px;
   }
 
 
-    .education-skills-wrapper {
-        grid-template: 
-        'education education'
-        'courses skills';
-    }
-
-    .projects-wrapper {
-        grid-template: 
-        'project1 project2'
-        'project3 project4'
-        'project5 project6';
-    }
-
-    #projects .section__heading {
-      margin-left: 42%;
+  .education-skills-wrapper {
+    grid-template: 
+      'education education'
+      'courses skills';
   }
-  
-    .code {
-        padding: 30px 245px 35px 30px;
-    }   
 
+  .projects-wrapper {
+    grid-row-gap: 20px;
+    grid-template: 
+      'project1 project2'
+      'project3 project4'
+      'project5 project6';
+  }
+
+  #projects .section__heading {
+    margin-left: 2%;
+  }
+
+  .project {
+    grid-template: 
+      'project-img'
+      'project-name'
+      'project-techs';
+  }
+
+  .project__techs {
+    margin-top: 5px;
+  }
+
+  .code {
+    padding: 30px 45px 35px 30px;
+  }   
     
-/* Footer */
-.footer {
-  height: 205px;
-  padding-top: 70px;
-  margin-top: 160px;
-}
+  /* Footer */
+  .footer {
+    height: 205px;
+    padding-top: 70px;
+    margin-top: 160px;
+  }
 
-.footer__container {
+  .footer__container {
     grid-template: 
     'footer__copyright footer__contacts';
-}
+  }
 
-.footer__contacts {
+  .footer__contacts {
     justify-self: right;
-}
+  }
 
-.footer__li:not(:last-child) {
-  margin-right: 20px;
-}
+  .footer__li:not(:last-child) {
+    margin-right: 20px;
+  }
 
-.footer__viber-link {
-  width: 38px;
-  height: 38px;
-}
+  .footer__viber-link {
+    width: 38px;
+    height: 38px;
+  }
 
-.footer__linkedin-link {
-  width: 35px;
-  height: 36px;
-}
+  .footer__linkedin-link {
+    width: 35px;
+    height: 36px;
+  }
   
-.footer__github-link {
-  width: 36px;
-  height: 38px;
-}
+  .footer__github-link {
+    width: 36px;
+    height: 38px;
+  }
 
 }

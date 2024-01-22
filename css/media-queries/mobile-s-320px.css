@@ -1,8 +1,8 @@
 /* stylelint-disable selector-class-pattern */
 @media screen and (max-width: 320px) {
   body {
-  font-size: 16px;
-}
+    font-size: 16px;
+  }
 
   .container {
     padding: 0 15px;
@@ -18,10 +18,10 @@
     display: none;
   }
   
-.theme-switcher {
-  width: 30px;
-  height: 30px;
-}
+  .theme-switcher {
+    width: 30px;
+    height: 30px;
+  }
 
   .burger__nav{
     display: block;
@@ -87,6 +87,7 @@
   }
 
   .projects-wrapper {
+    grid-gap: 15px;
     grid-template: 
       'project1'
       'project2'
@@ -98,8 +99,19 @@
 
   #projects .section__heading {
     margin-left: 35%;
-}
+  }
 
+  .project {
+    grid-template: 
+      'project-img'
+      'project-name'
+      'project-techs';
+  }
+
+  .project__techs {
+    margin-top: 5px;
+  }
+  
   .code {
     padding: 20px;
   }

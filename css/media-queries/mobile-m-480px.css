@@ -1,8 +1,8 @@
 /* stylelint-disable selector-class-pattern */
 @media screen and (min-width: 321px) and (max-width: 480px) {
   body {
-  font-size: 18px;
-}
+    font-size: 18px;
+  }
 
   .container {
     padding: 0 15px;
@@ -18,10 +18,10 @@
     display: none;
   }
   
-.theme-switcher {
-  width: 40px;
-  height: 40px;
-}
+  .theme-switcher {
+    width: 40px;
+    height: 40px;
+  }
 
   .burger__nav{
     display: block;
@@ -87,6 +87,7 @@
   }
 
   .projects-wrapper {
+    grid-gap: 15px;
     grid-template: 
       'project1'
       'project2'
@@ -99,7 +100,17 @@
   
   #projects .section__heading {
     margin-left: 35%;
-}
+  }
+
+  .project {
+    grid-template: 
+      'project-img project-img'
+      'project-name project-techs';
+  }
+  
+  .project__techs {
+    place-self: end;
+  }
 
 
   .code {

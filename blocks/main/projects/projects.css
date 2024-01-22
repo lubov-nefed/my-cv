@@ -8,17 +8,27 @@
 
 .project {
   display: grid;
+  padding: 10px 12px 12px;
+}
+
+.project__img {
+  grid-area: project-img;
 }
 
 .project__name {
   display: inline-block;
+  margin-top: 10px;
+  grid-area: project-name;
 }
 
 .project__techs {
   display: inline-flex;
+  gap: 10px;
+  grid-area: project-techs;
 }
 
 .techs__item {
+  padding: 3px 10px 4px 11px;
   border: solid 1px var(--accent-color);
   border-radius: 10px;
   color: var(--accent-color);
@@ -49,3 +59,17 @@
   grid-area: project6;
 }
 
+@media (pointer:fine) { 
+.project:hover {
+  border: 1.5px solid #104993;  
+  border-radius: 5px;
+  box-shadow: 3px 4px 9px 1.5px #104993;
+  transition: all 0.5s ease;
+}  
+}
+
+.project:active {
+  border: 1.5px solid #104993;  
+  border-radius: 5px;
+  box-shadow: 3px 4px 9px 1.5px #104993;
+} 

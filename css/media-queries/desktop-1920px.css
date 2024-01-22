@@ -88,9 +88,22 @@
   }
 
   .projects-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    grid-gap: 25px 15px;
       grid-template: 
           'project1 project2 project3'
           'project4 project5 project6';
+  }
+
+  .project {
+    grid-template: 
+        'project-img project-img'
+        'project-name project-techs';
+  }
+
+  .project__techs {
+    place-self: end;
   }
 
   .code {
