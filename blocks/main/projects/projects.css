@@ -23,6 +23,7 @@
 
 .project__techs {
   display: inline-flex;
+  margin-left: 10px;
   gap: 10px;
   grid-area: project-techs;
 }

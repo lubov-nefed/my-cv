@@ -24,3 +24,28 @@
   background: url('../../images/main/up-arrow-icon--hovered.svg');
   background-size: cover;
 }
+
+.list-item {
+  display: flex;
+  align-items: center;
+}
+
+.langs li:not(:first-child) {
+  margin-top: 15px;
+}
+
+.langs span {
+  margin-left: 10px;
+}
+
+.contacts a {
+  display: inline-flex;
+}
+
+.contacts li:not(:first-child) {
+  margin-top: 15px;
+}
+
+.contacts span {
+  margin-left: 15px;
+}
