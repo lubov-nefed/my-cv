@@ -16,6 +16,7 @@
   border-radius: 50%;
   margin: 10px;
   background-color: var(--accent-color);
+  flex-shrink: 0;
 }
 
 
@@ -24,12 +25,16 @@
 }
 
 .ed-li {
-  padding-left: 20px;
-  margin-bottom: 15px;
-  background: url('../../../images/main/bullet-icon.svg') no-repeat 0 50%;
   line-height: 125%;
 }
 
+.ed-li:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.ed-li span {
+  margin-left: 10px;
+}
 
 /* Courses */
 .courses {

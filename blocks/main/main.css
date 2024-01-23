@@ -31,7 +31,7 @@
 }
 
 .langs li:not(:first-child) {
-  margin-top: 15px;
+  margin-top: 5px;
 }
 
 .langs span {
