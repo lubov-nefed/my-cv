@@ -108,6 +108,7 @@
 
   .code {
     padding: 30px 45px 35px 30px;
+    overflow-x: scroll;
   }   
     
   /* Footer */

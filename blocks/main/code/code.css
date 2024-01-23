@@ -6,6 +6,9 @@
   background-color: #E4EBF1;
   color: #104993;
   font-family: monospace;
+  hyphens: none;
+  line-height: 175%;
+  overflow-wrap: normal;
 }
 
 .span--main-color {

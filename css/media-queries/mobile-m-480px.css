@@ -114,6 +114,7 @@
 
   .code {
     padding: 30px;
+    overflow-x: scroll;
   }
 
 
