@@ -15,7 +15,7 @@ burgerBtn.addEventListener('click', openBurgerMenu);
 
 const closeBurgerMenu = () => {
   burgerNav.style.visibility = 'hidden';
-  burgerNav.style.marginTop = '-100%';
+  burgerNav.style.marginTop = `-${window.getComputedStyle(burgerNav).height}`;
   document.querySelector('.body').classList.remove('overflow-hidden');
 };
 
