@@ -44,7 +44,7 @@
   }
 
   .first-section {
-    max-width: 665px;
+    grid-column-gap: 15px;
     grid-template-areas: 
       "heading photo"
       "text photo"
@@ -63,7 +63,6 @@
 
     
   .first-section__paragraph {
-    max-width: 380px;
     margin-top: 15px;
   }
     
@@ -78,11 +77,16 @@
 
 
   .education-skills-wrapper {
+    grid-column-gap: 10px;
     grid-template: 
       'education education'
       'courses skills';
   }
 
+  .courses__li {
+    grid-column-gap: 10px;
+  }
+  
   .projects-wrapper {
     grid-row-gap: 20px;
     grid-template: 

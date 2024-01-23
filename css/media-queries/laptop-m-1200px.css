@@ -70,6 +70,7 @@
 
     .education-skills-wrapper {
         max-width: 718px;
+        grid-column-gap: 50px;
         grid-template: 
             'education education'
             'courses skills';

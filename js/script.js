@@ -43,7 +43,7 @@ const langSwitcherHandler = () => {
   };
   langSwitcherAnimation();
 
-  const switchLang = () => {
+  const switchContent = () => {
     if (currentLang === 'en') currentLang = 'ru';
     else currentLang = 'en';
     Object.keys(dataLang[currentLang]).forEach((key) => {
@@ -56,7 +56,7 @@ const langSwitcherHandler = () => {
       } else document.querySelector(`[data-lang=${key}]`).innerHTML = dataLang[currentLang][key];
     });
   };
-  switchLang();
+  switchContent();
 };
 
 const langSwitcher = document.querySelector('.lang-switcher');

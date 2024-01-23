@@ -46,6 +46,7 @@
   }
 
   .first-section {
+    grid-column-gap: 10px;
     grid-template-areas: 
       "heading photo"
       "text photo"
@@ -64,7 +65,7 @@
 
     
   .first-section__paragraph {
-    max-width: 380px;
+    max-width: 500px;
     margin-top: 15px;
   }
     
@@ -79,6 +80,7 @@
 
 
   .education-skills-wrapper {
+    grid-column-gap: 50px;
     grid-template: 
       'education education'
       'courses skills';

@@ -45,6 +45,7 @@
   }
 
   .first-section {
+    grid-column-gap: 15px;
     grid-template-areas: 
       "heading heading"
       "text photo"
@@ -62,10 +63,6 @@
     font-size: 30px;
   }
     
-  .first-section__paragraph {
-    max-width: 162px;
-  }
-
   .section {
     margin-top: 45px;
   }
