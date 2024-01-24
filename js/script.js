@@ -25,10 +25,21 @@ const burgerAnchors = document.querySelectorAll('.burger__anchor');
 burgerAnchors.forEach((anchor) => anchor.addEventListener('click', closeBurgerMenu));
 
 /* Theme switcher */
-const switchTheme = () => {
-  const themeStyleSheet = document.querySelector('#theme-styles');
-  if (themeStyleSheet.getAttribute('href') === 'css/themes/light-theme.css') themeStyleSheet.setAttribute('href', 'css/themes/dark-theme.css');
-  else themeStyleSheet.setAttribute('href', 'css/themes/light-theme.css');
+const switchTheme = (e) => {
+  const currentTheme = e.target.getAttribute('data-current-theme');
+  let newTheme = '';
+  if (currentTheme === 'light') newTheme = 'dark';
+  else newTheme = 'light';
+  e.target.setAttribute('data-current-theme', newTheme);
+
+  const targetElementsClasses = ['header', 'body', 'burger__header', 'burger__nav', 'up-arrow-btn', 'project', 'footer'];
+  targetElementsClasses.forEach((cssClass) => {
+    const targetElementsCollection = document.querySelectorAll(`.${cssClass}`);
+    targetElementsCollection.forEach((element) => {
+      element.classList.remove(`${cssClass}--${currentTheme}-theme`);
+      element.classList.add(`${cssClass}--${newTheme}-theme`);
+    });
+  });
 };
 const themeBtn = document.querySelector('.theme-switcher');
 themeBtn.addEventListener('click', switchTheme);

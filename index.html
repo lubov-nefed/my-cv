@@ -4,19 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/themes/light-theme.css" id="theme-styles">
     <title data-lang="page-title">Lyubov Nefyodova Junior Frontend Developer</title>
 </head>
 
-<body class="body">
-    <nav class="burger__nav">
-        <header class="burger__header">
+<body class="body body--light-theme">
+    <nav class="burger__nav burger__nav--light-theme">
+        <header class="burger__header burger__header--light-theme">
             <h2 class="burger__heading" data-lang="burger-heading">Lyubov Nefyodova</h2>
             <button class="burger__close-btn">
                 <img src="images/header/close-icon-43px-43px-large.svg" srcset="images/header/close-icon-30px-30px-small.svg 30w,
@@ -34,7 +34,7 @@
             </li>
         </ul>
     </nav>
-    <header class="header" id="header">
+    <header class="header header--light-theme" id="header">
         <div class="header__container container">
             <button class="burger__btn">
                 <img class="burger__img" src="images/header/burger-icon-40px-24px-large.svg" srcset="images/header/burger-icon-25px-19px-small.svg 25w,
@@ -57,7 +57,7 @@
                 </ul>
             </nav>
             <div class="header-btns-container">
-                <button class="theme-switcher" title="Switch light & dark theme"></button>
+                <button class="theme-switcher" title="Switch light & dark theme" data-current-theme="light"></button>
                 <button class="lang-switcher" title="Switch language">
                     <span class="lang-btn-span" data-lang="lang-btn-span">en</span>
                     <div class="lang-switcher__rectangle">
@@ -68,9 +68,9 @@
             </div>
         </div>
     </header>
-    <main class="main">
+    <main class="main main--light-theme">
         <div class="main__container container">
-            <a href="#header" class="up-arrow-btn"></a>
+            <a href="#header" class="up-arrow-btn up-arrow-btn--light-theme"></a>
             <section class="main__section first-section">
                 <h1 class="first-section__heading"><span class="span--accent-color"
                         data-lang="first-section-heading">Hi, I’m </span><span class="span--main-color"
@@ -185,7 +185,7 @@
             <section class="section projects-section" id="projects">
                 <h2 class="section__heading" data-lang="section-heading">Projects</h2>
                 <div class="section__content projects-wrapper">
-                    <a href="https://lubov-nefed.github.io/your-profile/" class="project project1" target="_blank">
+                    <a href="https://lubov-nefed.github.io/your-profile/" class="project project1 project--light-theme" target="_blank">
                         <img class="project__img" src="images/main/projects/your-profile-img-350px-210px-large.jpg"
                             srcset="
                          images/main/projects/your-profile-img-260px-156px-small.jpg 260w,
@@ -203,7 +203,7 @@
                             <li class="techs__item">css</li>
                         </ul>
                     </a>
-                    <a href="https://lubov-nefed.github.io/pizza-market/" class="project project2" target="_blank">
+                    <a href="https://lubov-nefed.github.io/pizza-market/" class="project project2 project--light-theme" target="_blank">
                         <img class="project__img" src="images/main/projects/pizza-market-img-260px-156px-small.jpg"
                             srcset="
                          images/main/projects/pizza-market-img-260px-156px-small.jpg 260w,
@@ -221,7 +221,7 @@
                             <li class="techs__item">css</li>
                         </ul>
                     </a>
-                    <a href="https://lubov-nefed.github.io/computer-building-course/" class="project project3" target="_blank">
+                    <a href="https://lubov-nefed.github.io/computer-building-course/" class="project project3 project--light-theme" target="_blank">
                         <img class="project__img"
                             src="images/main/projects/computer-building-course-img-350px-210px-large.jpg" srcset="
                         images/main/projects/computer-building-course-img-260px-156px-small.jpg 260w,
@@ -239,7 +239,7 @@
                             <li class="techs__item">css</li>
                         </ul>
                     </a>
-                    <a href="https://lubov-nefed.github.io/safari-project/" class="project project4" target="_blank">
+                    <a href="https://lubov-nefed.github.io/safari-project/" class="project project4 project--light-theme" target="_blank">
                         <img class="project__img" src="images/main/projects/safari-img-350px-210px-large.jpg" srcset="
                         images/main/projects/safari-img-260px-156px-small.jpg 260w,
                         images/main/projects/safari-img-300px-180px-medium.jpg 300w,
@@ -253,7 +253,7 @@
                             <li class="techs__item">css</li>
                         </ul>
                     </a>
-                    <a href="https://lubov-nefed.github.io/relvise-project/" class="project project5" target="_blank">
+                    <a href="https://lubov-nefed.github.io/relvise-project/" class="project project5 project--light-theme" target="_blank">
                         <img class="project__img" src="images/main/projects/relvise-img-350px-210px-large.jpg" srcset="
                         images/main/projects/relvise-img-260px-156px-small.jpg 260w,
                         images/main/projects/relvise-img-300px-180px-medium.jpg 300w,
@@ -267,7 +267,7 @@
                             <li class="techs__item">css</li>
                         </ul>
                     </a>
-                    <a href="https://lubov-nefed.github.io/expoforum/" class="project project6" target="_blank">
+                    <a href="https://lubov-nefed.github.io/expoforum/" class="project project6 project--light-theme" target="_blank">
                         <img class="project__img" src="images/main/projects/expoforum-img-350px-210px-large.jpg" srcset="
                         images/main/projects/expoforum-img-260px-156px-small.jpg 260w,
                         images/main/projects/expoforum-img-300px-180px-medium.jpg 300w,
@@ -340,7 +340,7 @@
             </section>
         </div>
     </main>
-    <footer class="footer">
+    <footer class="footer footer--light-theme">
         <div class="footer__container container">
             <p class="footer__copyright" data-lang="footer-copyright">© 2022 Lyubov Nefyodova</p>
             <ul class="footer__contacts">

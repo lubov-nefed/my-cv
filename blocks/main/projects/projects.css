@@ -12,6 +12,7 @@
 }
 
 .project__img {
+  border-radius: 5px;
   grid-area: project-img;
 }
 
@@ -59,18 +60,3 @@
 .project6 {
   grid-area: project6;
 }
-
-@media (pointer:fine) { 
-.project:hover {
-  border: 1.5px solid #104993;  
-  border-radius: 5px;
-  box-shadow: 3px 4px 9px 1.5px #104993;
-  transition: all 0.5s ease;
-}  
-}
-
-.project:active {
-  border: 1.5px solid #104993;  
-  border-radius: 5px;
-  box-shadow: 3px 4px 9px 1.5px #104993;
-} 
