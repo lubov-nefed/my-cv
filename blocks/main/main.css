@@ -40,6 +40,7 @@
 
 .contacts a {
   display: inline-flex;
+  transition: all 0.3s ease;
 }
 
 .contacts li:not(:first-child) {
@@ -48,4 +49,10 @@
 
 .contacts span {
   margin-left: 15px;
+}
+
+@media (pointer:fine) {
+  .contacts a:hover {
+    color: var(--main-color);
+  }
 }
