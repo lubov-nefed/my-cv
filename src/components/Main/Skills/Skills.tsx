@@ -1,4 +1,7 @@
 import "./Skills.css";
+import javascriptImg from "../../../assets/images/main/education&skills/javascript-icon.svg";
+import gitImg from "../../../assets/images/main/education&skills/git-icon.svg";
+import reactImg from "../../../assets/images/main/education&skills/react-icon.svg";
 
 const Skills = () => {
   return (
@@ -12,24 +15,16 @@ const Skills = () => {
             <img
               alt="JavaScript icon"
               className="bullet-img"
-              src="images/main/education&skills/javascript-icon.svg"
+              src={javascriptImg}
             />
             <span className="skills__span">JavaScript, HTML, CSS</span>
           </li>
           <li className="skills__li skills__li--icon list-item">
-            <img
-              alt="Git icon"
-              className="bullet-img"
-              src="images/main/education&skills/git-icon.svg"
-            />
+            <img alt="Git icon" className="bullet-img" src={gitImg} />
             <span className="skills__span">Git</span>
           </li>
           <li className="skills__li skills__li--icon list-item">
-            <img
-              alt="React icon"
-              className="bullet-img"
-              src="images/main/education&skills/react-icon.svg"
-            />
+            <img alt="React icon" className="bullet-img" src={reactImg} />
             <span className="skills__span" data-lang="skills-item">
               React
             </span>

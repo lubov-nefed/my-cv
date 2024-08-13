@@ -1,4 +1,7 @@
 import "./Courses.css";
+import RsSchoolImg from "../../../assets/images/main/education&skills/rs-school-icon.svg";
+import FreeCodeCampImg from "../../../assets/images/main/education&skills/free-code-camp-icon.svg";
+import MimoApppImg from "../../../assets/images/main/education&skills/mimo-app-icon.svg";
 
 const Courses = () => {
   return (
@@ -12,7 +15,7 @@ const Courses = () => {
             <img
               alt="Rs School icon"
               className="bullet-img"
-              src="images/main/education&skills/rs-school-icon.svg"
+              src={RsSchoolImg}
             />
             <p className="courses__paragraph" data-lang="courses-item">
               Rs School, Frontend Stage #0 <br />
@@ -23,7 +26,7 @@ const Courses = () => {
             <img
               alt="FreeCodeCamp icon"
               className="bullet-img"
-              src="images/main/education&skills/free-code-camp-icon.svg"
+              src={FreeCodeCampImg}
             />
             <p className="courses__paragraph" data-lang="courses-item">
               FreeCodeCamp <br />
@@ -32,11 +35,7 @@ const Courses = () => {
             </p>
           </li>
           <li className="courses__li">
-            <img
-              alt="Mimo App icon"
-              className="bullet-img"
-              src="images/main/education&skills/mimo-app-icon.svg"
-            />
+            <img alt="Mimo App icon" className="bullet-img" src={MimoApppImg} />
             <p className="courses__paragraph" data-lang="courses-item">
               Mimo App <br />
               November 2021 - May 2022 <br />

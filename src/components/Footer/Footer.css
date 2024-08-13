@@ -17,17 +17,17 @@
 }
 
 .footer__viber-link {
-  background: url('../../images/footer/viber-icon.svg');
+  background: url('../../assets/images/footer/viber-icon.svg');
   background-size: cover;
 }
 
 .footer__linkedin-link {
-  background: url('../../images/footer/linkedin-icon.svg');
+  background: url('../../assets/images/footer/linkedin-icon.svg');
   background-size: cover;
 }
 
 .footer__github-link {
-  background: url('../../images/footer/github-icon.svg');
+  background: url('../../assets/images/footer/github-icon.svg');
   background-size: cover;
 }
 
@@ -37,17 +37,17 @@
 }
 
 .footer__viber-link:hover {
-  background: url('../../images/footer/viber-icon--hovered.svg');
+  background: url('../../assets/images/footer/viber-icon--hovered.svg');
   background-size: cover;
 }
 
 .footer__linkedin-link:hover {
-  background: url('../../images/footer/linkedin-icon--hovered.svg');
+  background: url('../../assets/images/footer/linkedin-icon--hovered.svg');
   background-size: cover;
 }
 
 .footer__github-link:hover {
-  background: url('../../images/footer/github-icon--hovered.svg');
+  background: url('../../assets/images/footer/github-icon--hovered.svg');
   background-size: cover;
 }
 
@@ -55,16 +55,16 @@
 
 
 .footer__viber-link:active {
-  background: url('../../images/footer/viber-icon--hovered.svg');
+  background: url('../../assets/images/footer/viber-icon--hovered.svg');
   background-size: cover;
 }
 
 .footer__linkedin-link:active {
-  background: url('../../images/footer/linkedin-icon--hovered.svg');
+  background: url('../../assets/images/footer/linkedin-icon--hovered.svg');
   background-size: cover;
 }
 
 .footer__github-link:active {
-  background: url('../../images/footer/github-icon--hovered.svg');
+  background: url('../../assets/images/footer/github-icon--hovered.svg');
   background-size: cover;
 }

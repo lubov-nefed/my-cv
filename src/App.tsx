@@ -1,4 +1,3 @@
-import "./App.css";
 import { Burger } from "./components/Header/Burger/Burger";
 import { Header } from "./components/Header/Header";
 import { Main } from "./components/Main/Main";

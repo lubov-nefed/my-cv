@@ -1,4 +1,7 @@
 import "./Greetings.css";
+import avatarImgLarge from "../../../assets/images/main/greetings/my-avatar-211px-211px-large.jpg";
+import avatarImgMedium from "../../../assets/images/main/greetings/my-avatar-150px-150px-medium.jpg";
+import avatarImgSmall from "../../../assets/images/main/greetings/my-avatar-130px-130px-small.jpg";
 
 const Greetings = () => {
   return (
@@ -16,9 +19,9 @@ const Greetings = () => {
       <img
         alt="Lyubov Nefyodova avatar image"
         className="avatar-img"
-        sizes="(max-width: 320px) 130px,                (max-width: 768px) and (min-width: 321px) 150px,                211px"
-        src="images/main/first-section/my-avatar-211px-211px-large.jpg"
-        srcSet="              images/main/first-section/my-avatar-130px-130px-small.jpg  130w,              images/main/first-section/my-avatar-150px-150px-medium.jpg 150w,              images/main/first-section/my-avatar-211px-211px-large.jpg  211w            "
+        sizes="(max-width: 320px) 130px, (max-width: 768px) and (min-width: 321px) 150px, 211px"
+        src={avatarImgLarge}
+        srcSet={`${avatarImgSmall} 130w, ${avatarImgMedium} 150w, ${avatarImgLarge}  211w `}
       />
       <p
         className="section__paragraph first-section__paragraph"

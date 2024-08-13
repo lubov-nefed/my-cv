@@ -1,5 +1,3 @@
-import "./About.css";
-
 const About = () => {
   return (
     <section className="section main__section" id="about">

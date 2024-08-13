@@ -1,5 +1,3 @@
-
-
 /* Header */
 .header {
   font-size: 20px;    
@@ -44,7 +42,7 @@
 
       
 .theme-switcher {
-  background-image: url('../../images/header/theme-switch-icon-large-40px-40px--light.svg');
+  background-image: url('../../assets/images/header/theme-switch-icon-large-40px-40px--light.svg');
   background-size: cover;
 }
 
@@ -54,12 +52,12 @@
   }
   
 .theme-switcher:hover {
-  background-image: url('../../images/header/theme-switch-icon-large-40px-40px--dark.svg')
+  background-image: url('../../assets/images/header/theme-switch-icon-large-40px-40px--dark.svg')
 }
 }
 
 .theme-switcher:active {
-  background-image: url('../../images/header/theme-switch-icon-large-40px-40px--dark.svg')
+  background-image: url('../../assets/images/header/theme-switch-icon-large-40px-40px--dark.svg')
 }
 
 .lang-switcher {

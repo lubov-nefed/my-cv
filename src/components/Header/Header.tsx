@@ -1,4 +1,6 @@
 import "./Header.css";
+import burgerImgLarge from "../../assets/images/header/burger-icon-40px-24px-large.svg";
+import burgerImgSmall from "../../assets/images/header/burger-icon-25px-19px-small.svg";
 
 const Header = () => {
   return (
@@ -9,8 +11,8 @@ const Header = () => {
             alt="Open navigation menu"
             className="burger__img"
             sizes="(max-width: 320px) 25px, 40px"
-            src="images/header/burger-icon-40px-24px-large.svg"
-            srcSet="              images/header/burger-icon-25px-19px-small.svg 25w,              images/header/burger-icon-40px-24px-large.svg 40w            "
+            src={burgerImgLarge}
+            srcSet={`${burgerImgSmall} 25w, ${burgerImgLarge} 40w`}
           />
         </button>
         <nav className="header__nav">

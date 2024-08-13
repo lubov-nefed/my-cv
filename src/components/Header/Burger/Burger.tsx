@@ -1,4 +1,6 @@
-import "./Burger.css";
+import "./Burger.css"; /* 
+import burgerCloseImgLarge from "../../../assets/images/header/close-icon-43px-43px-large.svg"; */
+import burgerCloseImgSmall from "../../../assets/images/header/close-icon-30px-30px-small.svg";
 
 const Burger = () => {
   return (
@@ -8,7 +10,7 @@ const Burger = () => {
           Lyubov Nefyodova
         </h2>
         <button className="burger__close-btn">
-          <img alt="Close" src="images/header/close-icon-30px-30px-small.svg" />
+          <img alt="Close" src={burgerCloseImgSmall} />
         </button>
       </header>
       <ul className="burger__list">

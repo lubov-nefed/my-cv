@@ -52,16 +52,14 @@
 }
 
 @media (pointer:fine) { 
-  .project--light-theme:hover {
-    border: 1.5px solid var(--text-color-light);  
+  .project--light-theme:hover { 
     border-radius: 5px;
     box-shadow: 3px 4px 9px 1.5px var(--text-color-light);
     transition: all 0.5s ease;
   }  
   }
   
-  .project--light-theme:active {
-    border: 1.5px solid var(--text-color-light);  
+  .project--light-theme:active { 
     border-radius: 5px;
     box-shadow: 3px 4px 9px 1.5px var(--text-color-light);
   } 
@@ -103,16 +101,14 @@
 }
 
 @media (pointer:fine) { 
-  .project--dark-theme:hover {
-    border: 1.5px solid var(--text-color-dark);  
+  .project--dark-theme:hover { 
     border-radius: 5px;
     box-shadow: 3px 4px 9px 1.5px var(--text-color-dark);
     transition: all 0.5s ease;
   }  
   }
   
-  .project--dark-theme:active {
-    border: 1.5px solid var(--text-color-dark);  
+  .project--dark-theme:active { 
     border-radius: 5px;
     box-shadow: 3px 4px 9px 1.5px var(--text-color-dark);
   } 
