@@ -30,7 +30,7 @@ const projectsData = [
   },
   {
     name: "React-Contacts",
-    href: "https://lubov-nefed.github.io/irina-nik-design-system",
+    href: "https://lubov-nefed.github.io/react-contacts",
     largeImg: reactContactsImgLarge,
     mediumImg: reactContactsImgMedium,
     smallImg: reactContactsImgSmall,
