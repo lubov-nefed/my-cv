@@ -1,15 +1,27 @@
 import javascriptProjectsIcon from "../../../../assets/images/main/javascript-projects-icon.svg";
+import reactProjectsIcon from "../../../../assets/images/main/projects/react-icon.svg";
+import typescriptProjectsIcon from "../../../../assets/images/main/projects/typescript-icon.svg";
 
 interface IProjectTechsProps {
-  hasJs?: true;
+  techs: string[];
 }
 
 const ProjectTechs = (props: IProjectTechsProps) => {
   return (
     <ul className="project__techs">
-      {props.hasJs && (
+      {props.techs.includes("React") && (
         <li>
-          <img alt="javascript" src={javascriptProjectsIcon} />
+          <img alt="React" src={reactProjectsIcon} />
+        </li>
+      )}
+      {props.techs.includes("TS") && (
+        <li>
+          <img alt="TypeScript" src={typescriptProjectsIcon} />
+        </li>
+      )}
+      {props.techs.includes("JS") && (
+        <li>
+          <img alt="JavaScript" src={javascriptProjectsIcon} />
         </li>
       )}
       <li className="techs__item">html</li>

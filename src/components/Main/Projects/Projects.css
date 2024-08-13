@@ -26,6 +26,7 @@
   grid-area: project-techs;
 }
 
+
 .techs__item {
   padding: 3px 10px 4px 11px;
   border: solid 1px var(--accent-color);

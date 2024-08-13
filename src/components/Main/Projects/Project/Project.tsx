@@ -25,8 +25,7 @@ const Project = (props: IProjectProps) => {
         srcSet={`${props.smallImg} 260w, ${props.mediumImg} 300w, ${props.largeImg}  350w`}
       />
       <p className="project__name">{props.name}</p>
-      {props.techs.includes("JS") && <ProjectTechs hasJs={true} />}
-      {!props.techs.includes("JS") && <ProjectTechs />}
+      <ProjectTechs techs={props.techs} />
     </a>
   );
 };
