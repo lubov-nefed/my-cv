@@ -26,7 +26,7 @@ const Skills = () => {
           <li className="skills__li skills__li--icon list-item">
             <img alt="React icon" className="bullet-img" src={reactImg} />
             <span className="skills__span" data-lang="skills-item">
-              React
+              React, TypeScript
             </span>
           </li>
           <li className="skills__li skills__li--bullet list-item">
