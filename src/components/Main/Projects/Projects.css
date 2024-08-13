@@ -1,0 +1,59 @@
+.projects-wrapper {
+  display: grid;
+  place-items: center;
+}
+
+.project {
+  display: grid;
+  padding: 10px 12px 12px;
+}
+
+.project__img {
+  border-radius: 5px;
+  grid-area: project-img;
+}
+
+.project__name {
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 10px;
+  grid-area: project-name;
+}
+
+.project__techs {
+  display: inline-flex;
+  gap: 10px;
+  grid-area: project-techs;
+}
+
+.techs__item {
+  padding: 3px 10px 4px 11px;
+  border: solid 1px var(--accent-color);
+  border-radius: 10px;
+  color: var(--accent-color);
+  font-size: 12px;
+}
+
+.project1 {
+  grid-area: project1;
+}
+
+.project2 {
+  grid-area: project2;
+}
+
+.project3 {
+  grid-area: project3;
+}
+
+.project4 {
+  grid-area: project4;
+}
+
+.project5 {
+  grid-area: project5;
+}
+
+.project6 {
+  grid-area: project6;
+}

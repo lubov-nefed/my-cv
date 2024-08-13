@@ -1,7 +1,18 @@
 import "./App.css";
+import { Burger } from "./components/Header/Burger/Burger";
+import { Header } from "./components/Header/Header";
+import { Main } from "./components/Main/Main";
+import { Footer } from "./components/Footer/Footer";
 
 function App() {
-  return <>Lyubov Nefyodova Junior Frontend Developer</>;
+  return (
+    <>
+      <Burger />
+      <Header />
+      <Main />
+      <Footer />
+    </>
+  );
 }
 
 export default App;

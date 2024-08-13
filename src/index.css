@@ -1,0 +1,38 @@
+@import url("../src/css/reset.css");
+@import url("../src/css/themes.css");
+@import url("../src/css/media-queries/desktop-1920px.css");
+@import url('../src/css/media-queries/laptop-m-1200px.css');
+@import url('../src/css/media-queries/laptop-s-1000px.css');
+@import url('../src/css/media-queries/tablet-768px.css');
+@import url('../src/css/media-queries/mobile-m-480px.css');
+@import url('../src/css/media-queries/mobile-s-320px.css');
+
+:root {
+  --main-color: #139FEC;
+  --accent-color: #FF2E47;
+  --code-string-color: #B32032;
+}
+
+body {
+  font-family: Roboto, sans-serif; 
+}
+
+a:hover, button:hover {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+/* Section */
+.section__heading {
+  font-weight: 700;
+  line-height: normal;
+}
+

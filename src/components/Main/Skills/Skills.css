@@ -1,0 +1,15 @@
+.skills {
+  grid-area: skills;
+}
+
+.skills__li--icon:not(:first-child) {
+  margin-top: 15px;
+}
+
+.skills__li--icon span {
+  margin-left: 10px;
+}
+
+.skills__li--bullet {
+  margin-top: 10px;
+}

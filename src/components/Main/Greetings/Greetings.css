@@ -1,0 +1,44 @@
+
+.first-section {
+  display: grid;
+  margin-top: 50px;
+}
+
+.first-section__heading {
+  font-weight: 900;
+  grid-area: heading;
+  line-height: normal;
+}
+
+.first-section__paragraph {
+  grid-area: text;
+}
+
+.avatar-img {
+  min-width: 130px;
+  grid-area: photo;
+}
+
+.first-section__btn {
+  border-radius: 35px;
+  background-color: var(--main-color);
+  color: #fff;
+  font-weight: 600;
+  grid-area: button;
+  line-height: 325%;
+  text-align: center;
+}
+
+@media (pointer: fine) {
+  .first-section__btn {    
+  transition: all 0.5s ease;
+  }
+
+  .first-section__btn:hover {
+    background-color: var(--accent-color);
+  }
+}
+
+.first-section__btn:active {
+  background-color: var(--accent-color);
+}

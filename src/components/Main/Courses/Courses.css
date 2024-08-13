@@ -1,0 +1,19 @@
+
+/* Courses */
+.courses {
+  grid-area: courses;
+}
+
+.courses__li {
+  display: grid;
+  grid-template-columns: 0.75fr 2fr;
+  line-height: 125%;
+}
+
+.courses__li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.courses__paragraph {
+  display: inline-block;
+}

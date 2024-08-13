@@ -1,0 +1,33 @@
+/* Education&Skills */
+.education-skills-wrapper {
+  display: grid;
+}
+
+.bullet-img {
+  display: inline-block;
+}
+
+.bullet {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  margin: 10px;
+  background-color: var(--accent-color);
+}
+
+
+.education {
+  grid-area: education;
+}
+
+
+.ed-li:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.ed-li span {
+  margin-left: 10px;
+}
+
