@@ -9,7 +9,7 @@ const About = () => {
           I’m junior front-end developer interested in continuous learning and
           gaining real project experience. I’m opened to new interesting and
           significant projects. My best soft skills are effective communication
-          and flexibility in teamwork.
+          and flexibility in a teamwork.
         </p>
       </div>
     </section>
