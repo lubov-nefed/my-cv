@@ -41,7 +41,7 @@
 }
  
 .up-arrow-btn--light-theme {
-  background: url('../../images/main/up-arrow-icon--light.svg') no-repeat;
+  background: url('../assets/images/main/up-arrow-icon--light.svg') no-repeat;
   background-size: cover;
 }
  
@@ -90,7 +90,7 @@
 }
  
 .up-arrow-btn--dark-theme {
-  background: url('../../images/main/up-arrow-icon--dark.svg') no-repeat;
+  background: url('../assets/images/main/up-arrow-icon--dark.svg') no-repeat;
   background-size: cover;
 }
  

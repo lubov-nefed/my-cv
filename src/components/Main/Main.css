@@ -3,19 +3,18 @@
   top: 60%;
   right: 5%;
   background-size: cover;
-  opacity: 0;
   transition: all 0.3s ease;
 }
 
 @media (pointer:fine) {
   .up-arrow-btn:hover {
-    background: url('../../images/main/up-arrow-icon--hovered.svg');
+    background: url('../../assets/images/main/up-arrow-icon--hovered.svg');
     background-size: cover;
   }
 }
 
 .up-arrow-btn:active {
-  background: url('../../images/main/up-arrow-icon--hovered.svg');
+  background: url('../../assets/images/main/up-arrow-icon--hovered.svg');
   background-size: cover;
 }
 
