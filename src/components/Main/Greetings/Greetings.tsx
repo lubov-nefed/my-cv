@@ -1,7 +1,7 @@
 import "./Greetings.css";
-import avatarImgLarge from "../../../assets/images/main/greetings/my-avatar-211px-211px-large.jpg";
-import avatarImgMedium from "../../../assets/images/main/greetings/my-avatar-150px-150px-medium.jpg";
-import avatarImgSmall from "../../../assets/images/main/greetings/my-avatar-130px-130px-small.jpg";
+import avatarImgLarge from "../../../assets/images/main/greetings/my-avatar-211px-211px-large.svg";
+import avatarImgMedium from "../../../assets/images/main/greetings/my-avatar-150px-150px-medium.svg";
+import avatarImgSmall from "../../../assets/images/main/greetings/my-avatar-130px-130px-small.svg";
 
 const Greetings = () => {
   return (
