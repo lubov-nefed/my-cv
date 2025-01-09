@@ -11,7 +11,6 @@ function App() {
 
   useEffect(() => {
     const observer = new IntersectionObserver(([entry]) => {
-      console.log("entry.isIntersecting", entry.isIntersecting);
       setIsHeaderIntersecting(entry.isIntersecting);
     });
     observer.observe(headerRef.current);
