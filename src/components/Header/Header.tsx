@@ -2,9 +2,9 @@ import "./Header.css";
 import burgerImgLarge from "../../assets/images/header/burger-icon-40px-24px-large.svg";
 import burgerImgSmall from "../../assets/images/header/burger-icon-25px-19px-small.svg";
 
-const Header = () => {
+const Header = ({ ref }) => {
   return (
-    <header className="header header--light-theme" id="header">
+    <header ref={ref} className="header header--light-theme" id="header">
       <div className="header__container container">
         <button className="burger__btn">
           <img

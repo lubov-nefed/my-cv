@@ -13,7 +13,6 @@ const Main = () => {
   return (
     <main className="main main--light-theme">
       <div className="main__container container">
-        <a className="up-arrow-btn up-arrow-btn--light-theme" href="#header" />
         <Greetings />
         <About />
         <div
