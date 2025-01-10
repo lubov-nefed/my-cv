@@ -11,7 +11,7 @@ import { Contacts } from "./Contacts/Contacts";
 
 const Main = () => {
   return (
-    <main className="main main--light-theme">
+    <main className="main">
       <div className="main__container container">
         <Greetings />
         <About />

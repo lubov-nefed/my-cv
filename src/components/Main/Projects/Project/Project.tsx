@@ -13,7 +13,7 @@ interface IProjectProps {
 const Project = (props: IProjectProps) => {
   return (
     <a
-      className={`project project${props.index} project--light-theme`}
+      className={`project project${props.index} project--theme-styles`}
       href={props.href}
       target="_blank"
     >

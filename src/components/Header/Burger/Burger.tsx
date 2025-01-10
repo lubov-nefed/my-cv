@@ -4,8 +4,8 @@ import burgerCloseImgSmall from "../../../assets/images/header/close-icon-30px-3
 
 const Burger = () => {
   return (
-    <nav className="burger__nav burger__nav--light-theme">
-      <header className="burger__header burger__header--light-theme">
+    <nav className="burger__nav burger__nav--theme-styles">
+      <header className="burger__header burger__header--theme-styles">
         <h2 className="burger__heading" data-lang="burger-heading">
           Lyubov Nefyodova
         </h2>

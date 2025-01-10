@@ -8,6 +8,13 @@ function App() {
   const [isHeaderIntersecting, setIsHeaderIntersecting] = useState(false);
   const headerRef = useRef(null);
   const arrowRef = useRef(null);
+  const [theme, setTheme] = useState("light");
+
+  const handleThemeSwitch = () => {
+    console.log("handleThemeSwitch");
+    const nextTheme = theme === "light" ? "dark" : "light";
+    setTheme(nextTheme);
+  };
 
   useEffect(() => {
     const observer = new IntersectionObserver(([entry]) => {
@@ -23,12 +30,12 @@ function App() {
   }, [isHeaderIntersecting]);
 
   return (
-    <div id="app">
+    <div id="app" className={`app--${theme}-theme`}>
       <Burger />
-      <Header ref={headerRef} />
+      <Header ref={headerRef} handleThemeSwitch={handleThemeSwitch} />
       <a
         ref={arrowRef}
-        className="up-arrow-btn up-arrow-btn--light-theme"
+        className="up-arrow-btn up-arrow-btn--theme-styles"
         href="#header"
       />
       <Main />

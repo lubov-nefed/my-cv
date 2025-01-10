@@ -2,9 +2,9 @@ import "./Header.css";
 import burgerImgLarge from "../../assets/images/header/burger-icon-40px-24px-large.svg";
 import burgerImgSmall from "../../assets/images/header/burger-icon-25px-19px-small.svg";
 
-const Header = ({ ref }) => {
+const Header = ({ ref, handleThemeSwitch }) => {
   return (
-    <header ref={ref} className="header header--light-theme" id="header">
+    <header ref={ref} className="header header--theme-styles" id="header">
       <div className="header__container container">
         <button className="burger__btn">
           <img
@@ -69,6 +69,7 @@ const Header = ({ ref }) => {
             className="theme-switcher"
             data-current-theme="light"
             title="Switch light & dark theme"
+            onClick={handleThemeSwitch}
           />
           <button className="lang-switcher" title="Switch language">
             <span className="lang-btn-span" data-lang="lang-btn-span">

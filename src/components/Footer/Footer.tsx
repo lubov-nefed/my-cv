@@ -2,7 +2,7 @@ import "./Footer.css";
 
 const Footer = () => {
   return (
-    <footer className="footer footer--light-theme">
+    <footer className="footer footer--theme-styles">
       <div className="footer__container container">
         <p className="footer__copyright" data-lang="footer-copyright">
           © 2022 Lyubov Nefyodova
