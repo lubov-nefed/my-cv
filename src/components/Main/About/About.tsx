@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <section className="section main__section" id="about">
+    <section className="section main__section" id="About">
       <h2 className="section__heading" data-lang="section-heading">
         About me
       </h2>
