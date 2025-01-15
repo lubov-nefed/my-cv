@@ -4,17 +4,23 @@ import burgerImgSmall from "../../assets/images/header/burger-icon-25px-19px-sma
 import { dataLang } from "../../assets/language-content/lang-dependent-content";
 
 const Header = ({ ref, handleThemeSwitch, handleLangSwitch, lang }) => {
-  const headerList = dataLang[lang].headerNavItem.map((item, index) => {
-    <li className="header__li">
-      <a
-        className="header__anchor"
-        data-lang="header-nav-item"
-        href={`#${dataLang.en.headerNavItem[index]}`}
-      >
-        {headerNavItem}
-      </a>
-    </li>;
-  });
+  const removeSpaces = (str: string) => {
+    const arr = str.split(" ");
+    return arr.join("");
+  };
+  const headerList = dataLang[lang].headerNavItem.map(
+    (item: string, index: number) => (
+      <li className="header__li">
+        <a
+          className="header__anchor"
+          data-lang="header-nav-item"
+          href={`#${removeSpaces(dataLang.en.headerNavItem[index])}`}
+        >
+          {item}
+        </a>
+      </li>
+    )
+  );
   return (
     <header ref={ref} className="header header--theme-styles" id="header">
       <div className="header__container container">
@@ -28,53 +34,7 @@ const Header = ({ ref, handleThemeSwitch, handleLangSwitch, lang }) => {
           />
         </button>
         <nav className="header__nav">
-          <ul className="header__list">
-            <li className="header__li">
-              <a
-                className="header__anchor"
-                data-lang="header-nav-item"
-                href="#about"
-              >
-                {headerNavItem}
-              </a>
-            </li>
-            <li className="header__li">
-              <a
-                className="header__anchor"
-                data-lang="header-nav-item"
-                href="#education&skills"
-              >
-                Education & Skills
-              </a>
-            </li>
-            <li className="header__li">
-              <a
-                className="header__anchor"
-                data-lang="header-nav-item"
-                href="#projects"
-              >
-                Projects
-              </a>
-            </li>
-            <li className="header__li">
-              <a
-                className="header__anchor"
-                data-lang="header-nav-item"
-                href="#code"
-              >
-                Code
-              </a>
-            </li>
-            <li className="header__li">
-              <a
-                className="header__anchor"
-                data-lang="header-nav-item"
-                href="#contacts"
-              >
-                Contacts
-              </a>
-            </li>
-          </ul>
+          <ul className="header__list">{headerList}</ul>
         </nav>
         <div className="header-btns-container">
           <button

@@ -17,7 +17,7 @@ const Main = () => {
         <About />
         <div
           className="education-skills-wrapper main__section"
-          id="education&skills"
+          id="Education&Skills"
         >
           <Education />
           <Courses />

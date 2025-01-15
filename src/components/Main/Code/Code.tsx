@@ -2,7 +2,7 @@ import "./Code.css";
 
 const Code = () => {
   return (
-    <section className="section main__section" id="code">
+    <section className="section main__section" id="Code">
       <h2 className="section__heading" data-lang="section-heading">
         Code sample
       </h2>

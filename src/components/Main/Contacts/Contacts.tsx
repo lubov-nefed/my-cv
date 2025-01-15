@@ -6,7 +6,7 @@ import locationIcon from "../../../assets/images/main/contacts/location-icon.svg
 
 const Contacts = () => {
   return (
-    <section className="section main__section contacts" id="contacts">
+    <section className="section main__section contacts" id="Contacts">
       <h2 className="section__heading" data-lang="section-heading">
         Contacts
       </h2>
