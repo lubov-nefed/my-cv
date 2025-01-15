@@ -8,6 +8,7 @@
   font-size: 20px;
   font-weight: 500;
   transition: all 0.5s ease;
+  visibility: hidden;
 }
 
 .burger__header {
@@ -30,4 +31,9 @@
 .burger__anchor {
   display: inline-block;
   padding: 6px 13px;
+}
+
+.burger__nav--opened {  
+  margin-top: 0;  
+  visibility: visible;
 }

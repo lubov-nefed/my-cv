@@ -5,7 +5,7 @@ import { dataLang } from "../../../assets/language-content/langDependentContent"
 import { LanguageContext } from "../../../LanguageContext";
 import { useContext } from "react";
 
-const Burger = () => {
+const Burger = ({ isOpen, handleBurgerClose }) => {
   const lang = useContext(LanguageContext);
 
   const removeSpaces = (str: string) => {
@@ -27,12 +27,19 @@ const Burger = () => {
     )
   );
   return (
-    <nav className="burger__nav burger__nav--theme-styles">
+    <nav
+      className={`burger__nav burger__nav--theme-styles ${
+        isOpen && "burger__nav--opened"
+      }`}
+    >
       <header className="burger__header burger__header--theme-styles">
         <h2 className="burger__heading" data-lang="burger-heading">
           Lyubov Nefyodova
         </h2>
-        <button className="burger__close-btn">
+        <button
+          className="burger__close-btn"
+          onClick={() => handleBurgerClose()}
+        >
           <img alt="Close" src={burgerCloseImgSmall} />
         </button>
       </header>

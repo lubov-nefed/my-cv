@@ -1,11 +1,13 @@
 import "./Header.css";
+import { Burger } from "./Burger/Burger";
 import burgerImgLarge from "../../assets/images/header/burger-icon-40px-24px-large.svg";
 import burgerImgSmall from "../../assets/images/header/burger-icon-25px-19px-small.svg";
 import { dataLang } from "../../assets/language-content/langDependentContent";
 import { LanguageContext } from "../../LanguageContext";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 
 const Header = ({ ref, handleThemeSwitch, handleLangSwitch }) => {
+  const [isBurgerOpen, setIsBurgerOpen] = useState(false);
   const lang = useContext(LanguageContext);
 
   const removeSpaces = (str: string) => {
@@ -26,10 +28,17 @@ const Header = ({ ref, handleThemeSwitch, handleLangSwitch }) => {
       </li>
     )
   );
+
+  const handleBurgerOpen = () => {
+    setIsBurgerOpen(true);
+  };
+  const handleBurgerClose = () => {
+    setIsBurgerOpen(false);
+  };
   return (
     <header ref={ref} className="header header--theme-styles" id="header">
       <div className="header__container container">
-        <button className="burger__btn">
+        <button className="burger__btn" onClick={handleBurgerOpen}>
           <img
             alt="Open navigation menu"
             className="burger__img"
@@ -38,6 +47,7 @@ const Header = ({ ref, handleThemeSwitch, handleLangSwitch }) => {
             srcSet={`${burgerImgSmall} 25w, ${burgerImgLarge} 40w`}
           />
         </button>
+        <Burger isOpen={isBurgerOpen} handleBurgerClose={handleBurgerClose} />
         <nav className="header__nav">
           <ul className="header__list">{listItems}</ul>
         </nav>

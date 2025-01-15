@@ -25,7 +25,6 @@
 
   .burger__nav{
     display: block;
-    visibility: hidden;
   }
 
   .burger__header  {

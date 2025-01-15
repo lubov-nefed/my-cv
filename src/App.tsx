@@ -1,4 +1,3 @@
-import { Burger } from "./components/Header/Burger/Burger";
 import { Header } from "./components/Header/Header";
 import { Main } from "./components/Main/Main";
 import { Footer } from "./components/Footer/Footer";
@@ -41,7 +40,6 @@ function App() {
     <div id="app" className={`app--${theme}-theme`}>
       <LanguageContext.Provider value={lang}>
         {<title>{`${dataLang[lang].pageTitle}`}</title>}
-        <Burger />
         <Header
           ref={headerRef}
           handleThemeSwitch={handleThemeSwitch}
