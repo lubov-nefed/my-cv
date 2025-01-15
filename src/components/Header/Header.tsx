@@ -1,20 +1,25 @@
 import "./Header.css";
 import burgerImgLarge from "../../assets/images/header/burger-icon-40px-24px-large.svg";
 import burgerImgSmall from "../../assets/images/header/burger-icon-25px-19px-small.svg";
-import { dataLang } from "../../assets/language-content/lang-dependent-content";
+import { dataLang } from "../../assets/language-content/langDependentContent";
+import { LanguageContext } from "../../LanguageContext";
+import { useContext } from "react";
 
-const Header = ({ ref, handleThemeSwitch, handleLangSwitch, lang }) => {
+const Header = ({ ref, handleThemeSwitch, handleLangSwitch }) => {
+  const lang = useContext(LanguageContext);
+
   const removeSpaces = (str: string) => {
     const arr = str.split(" ");
     return arr.join("");
   };
-  const headerList = dataLang[lang].headerNavItem.map(
+
+  const listItems = dataLang[lang].navItem.map(
     (item: string, index: number) => (
-      <li className="header__li">
+      <li className="header__li" key={item}>
         <a
           className="header__anchor"
           data-lang="header-nav-item"
-          href={`#${removeSpaces(dataLang.en.headerNavItem[index])}`}
+          href={`#${removeSpaces(dataLang.en.navItem[index])}`}
         >
           {item}
         </a>
@@ -34,7 +39,7 @@ const Header = ({ ref, handleThemeSwitch, handleLangSwitch, lang }) => {
           />
         </button>
         <nav className="header__nav">
-          <ul className="header__list">{headerList}</ul>
+          <ul className="header__list">{listItems}</ul>
         </nav>
         <div className="header-btns-container">
           <button

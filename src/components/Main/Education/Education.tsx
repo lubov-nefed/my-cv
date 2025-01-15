@@ -1,27 +1,30 @@
 import "./Education.css";
+import { useContext } from "react";
+import { LanguageContext } from "../../../LanguageContext";
+import { dataLang } from "../../../assets/language-content/langDependentContent";
 
 const Education = () => {
+  const lang = useContext(LanguageContext);
   return (
     <section className="section education">
       <h2 className="section__heading" data-lang="section-heading">
-        Education & Skills
+        {dataLang[lang].sectionHeading[1]}
       </h2>
       <div className="section__content">
         <ul>
           <li className="ed-li list-item">
             <div className="bullet" />
             <span data-lang="education-item">
-              Lobachevsky University, B.A. in Psychology <br />
+              {dataLang[lang].educationItem[0]} <br />
               2014 - 2018
             </span>
           </li>
           <li className="ed-li list-item">
             <div className="bullet" />
             <span data-lang="education-item">
-              Lobachevsky University, Physical Culture and Sports
-              (short-program)
+              {dataLang[lang].educationItem[1]}
               <br />
-              March 2019 - June 2019
+              2019
             </span>
           </li>
         </ul>

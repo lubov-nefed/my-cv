@@ -3,14 +3,17 @@ import { Header } from "./components/Header/Header";
 import { Main } from "./components/Main/Main";
 import { Footer } from "./components/Footer/Footer";
 import { useEffect, useRef, useState } from "react";
-import { dataLang } from "./assets/language-content/lang-dependent-content";
+import { dataLang } from "./assets/language-content/langDependentContent";
+import { LanguageContext } from "./LanguageContext";
+
+type lang = "en" | "ru";
 
 function App() {
   const [isHeaderIntersecting, setIsHeaderIntersecting] = useState(false);
   const headerRef = useRef(null);
   const arrowRef = useRef(null);
   const [theme, setTheme] = useState("light");
-  const [lang, setLang] = useState("en");
+  const [lang, setLang] = useState<lang>("en");
 
   const handleThemeSwitch = () => {
     const nextTheme = theme === "light" ? "dark" : "light";
@@ -36,21 +39,22 @@ function App() {
 
   return (
     <div id="app" className={`app--${theme}-theme`}>
-      {<title>{`${dataLang[lang].pageTitle}`}</title>}
-      <Burger />
-      <Header
-        ref={headerRef}
-        handleThemeSwitch={handleThemeSwitch}
-        handleLangSwitch={handleLangSwitch}
-        lang={lang}
-      />
-      <a
-        ref={arrowRef}
-        className="up-arrow-btn up-arrow-btn--theme-styles"
-        href="#header"
-      />
-      <Main />
-      <Footer />
+      <LanguageContext.Provider value={lang}>
+        {<title>{`${dataLang[lang].pageTitle}`}</title>}
+        <Burger />
+        <Header
+          ref={headerRef}
+          handleThemeSwitch={handleThemeSwitch}
+          handleLangSwitch={handleLangSwitch}
+        />
+        <a
+          ref={arrowRef}
+          className="up-arrow-btn up-arrow-btn--theme-styles"
+          href="#header"
+        />
+        <Main />
+        <Footer />
+      </LanguageContext.Provider>
     </div>
   );
 }

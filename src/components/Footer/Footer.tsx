@@ -1,11 +1,15 @@
 import "./Footer.css";
+import { useContext } from "react";
+import { LanguageContext } from "../../LanguageContext";
+import { dataLang } from "../../assets/language-content/langDependentContent";
 
 const Footer = () => {
+  const lang = useContext(LanguageContext);
   return (
     <footer className="footer footer--theme-styles">
       <div className="footer__container container">
         <p className="footer__copyright" data-lang="footer-copyright">
-          © 2022 Lyubov Nefyodova
+          {dataLang[lang].footerCopyright}
         </p>
         <ul className="footer__contacts">
           <li className="footer__li">

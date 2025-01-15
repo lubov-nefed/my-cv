@@ -1,10 +1,14 @@
 import "./Code.css";
+import { useContext } from "react";
+import { LanguageContext } from "../../../LanguageContext";
+import { dataLang } from "../../../assets/language-content/langDependentContent";
 
 const Code = () => {
+  const lang = useContext(LanguageContext);
   return (
     <section className="section main__section" id="Code">
       <h2 className="section__heading" data-lang="section-heading">
-        Code sample
+        {dataLang[lang].sectionHeading[5]}
       </h2>
       <div className="section__content">
         <p className="code">

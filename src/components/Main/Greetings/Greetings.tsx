@@ -2,16 +2,20 @@ import "./Greetings.css";
 import avatarImgLarge from "../../../assets/images/main/greetings/my-avatar-211px-211px-large.svg";
 import avatarImgMedium from "../../../assets/images/main/greetings/my-avatar-150px-150px-medium.svg";
 import avatarImgSmall from "../../../assets/images/main/greetings/my-avatar-130px-130px-small.svg";
+import { useContext } from "react";
+import { LanguageContext } from "../../../LanguageContext";
+import { dataLang } from "../../../assets/language-content/langDependentContent";
 
 const Greetings = () => {
+  const lang = useContext(LanguageContext);
   return (
     <section className="main__section first-section">
       <h1 className="first-section__heading">
         <span className="span--accent-color" data-lang="first-section-heading">
-          Hi, I’m{" "}
+          {dataLang[lang].firstSectionHeading[0]}{" "}
         </span>
         <span className="span--main-color" data-lang="first-section-heading">
-          Lyubov Nefyodova
+          <>{dataLang[lang].firstSectionHeading[1]}</>
         </span>
         <br />
         Junior Frontend Developer
@@ -27,8 +31,7 @@ const Greetings = () => {
         className="section__paragraph first-section__paragraph"
         data-lang="section-paragraph"
       >
-        I aspire to become a qualified frontend developer with strong technical
-        skills and good performance as a team member.
+        {dataLang[lang].sectionParagraph[0]}
       </p>
       <a
         className="first-section__btn"
@@ -36,7 +39,7 @@ const Greetings = () => {
         href="viber://chat?number=%2B79991394531"
         title="Contact me via Viber"
       >
-        Contact me
+        {dataLang[lang].firstSectionBtn}
       </a>
     </section>
   );

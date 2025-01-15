@@ -1,15 +1,17 @@
+import { useContext } from "react";
+import { LanguageContext } from "../../../LanguageContext";
+import { dataLang } from "../../../assets/language-content/langDependentContent";
+
 const About = () => {
+  const lang = useContext(LanguageContext);
   return (
     <section className="section main__section" id="About">
       <h2 className="section__heading" data-lang="section-heading">
-        About me
+        {dataLang[lang].sectionHeading[0]}
       </h2>
       <div className="section__content">
         <p className="section__paragraph" data-lang="section-paragraph">
-          I’m junior front-end developer interested in continuous learning and
-          gaining real project experience. I’m opened to new interesting and
-          significant projects. My best soft skills are effective communication
-          and flexibility in a teamwork.
+          {dataLang[lang].sectionParagraph[1]}
         </p>
       </div>
     </section>

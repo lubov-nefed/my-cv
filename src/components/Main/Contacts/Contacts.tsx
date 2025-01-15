@@ -3,12 +3,16 @@ import viberIcon from "../../../assets/images/main/contacts/viber-icon.svg";
 import linkedinIcon from "../../../assets/images/main/contacts/linkedin-icon.svg";
 import githubIcon from "../../../assets/images/main/contacts/github-icon.svg";
 import locationIcon from "../../../assets/images/main/contacts/location-icon.svg";
+import { useContext } from "react";
+import { LanguageContext } from "../../../LanguageContext";
+import { dataLang } from "../../../assets/language-content/langDependentContent";
 
 const Contacts = () => {
+  const lang = useContext(LanguageContext);
   return (
     <section className="section main__section contacts" id="Contacts">
       <h2 className="section__heading" data-lang="section-heading">
-        Contacts
+        {dataLang[lang].sectionHeading[7]}
       </h2>
       <div className="section__content">
         <ul>
@@ -16,7 +20,7 @@ const Contacts = () => {
             <a href="mailto:love.nefed@gmail.com">
               <img alt="Email icon" className="bullet-img" src={emailIcon} />
               <span data-lang="contacts-item">
-                e-mail: love.nefed@gmail.com
+                {dataLang[lang].contactsItem[0]}
               </span>
             </a>
           </li>
@@ -42,7 +46,7 @@ const Contacts = () => {
             <a href="https://maps.app.goo.gl/a4nWPh2ciqPW2J4DA" target="_blank">
               <img alt="React icon" className="bullet-img" src={locationIcon} />
               <span data-lang="contacts-item">
-                Location: Russia, Nizhny Novgorod
+                {dataLang[lang].contactsItem[1]}
               </span>
             </a>
           </li>
