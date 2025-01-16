@@ -1,4 +1,23 @@
-const dataLang = {
+interface ILangContent {
+  pageTitle: string;
+  burgerHeading: string;
+  navItem: string[];
+  langBtnSpan: string[];
+  themeSwitcherTooltip: string;
+  langSwitcherToopltip: string;
+  firstSectionHeading: string[];
+  sectionParagraph: string[];
+  firstSectionBtn: string;
+  firstSectionBtnTooltip: string;
+  sectionHeading: string[];
+  educationItem: string[];
+  coursesItem: string;
+  langItem: string[];
+  contactsItem: string[];
+  footerCopyright: string;
+}
+
+const dataLang: { ru: ILangContent; en: ILangContent } = {
   ru: {
     pageTitle: "Любовь Нефёдова Junior Frontend Developer",
     burgerHeading: "Любовь Нефёдова",
@@ -13,6 +32,7 @@ const dataLang = {
       Эффективная коммуникация и гибкость - это то, что лучше всего помогает мне в командной работе.`,
     ],
     firstSectionBtn: "Связаться",
+    firstSectionBtnTooltip: "Написать мне в Телеграм",
     sectionHeading: [
       "Обо мне",
       "Образование и навыки",
@@ -49,6 +69,7 @@ const dataLang = {
       My best soft skills are effective communication and flexibility in teamwork.`,
     ],
     firstSectionBtn: "Contact me",
+    firstSectionBtnTooltip: "Contact me via Telegram",
     sectionHeading: [
       "About me",
       "Education & Skills",
