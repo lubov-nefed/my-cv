@@ -36,8 +36,8 @@ const Greetings = () => {
       <a
         className="first-section__btn"
         data-lang="first-section-btn"
-        href="t.me/LubovNefed"
-        title="Contact me via Telegram"
+        href=" https://t.me/LubovNefed"
+        title={dataLang[lang].firstSectionBtnTooltip}
       >
         {dataLang[lang].firstSectionBtn}
       </a>
