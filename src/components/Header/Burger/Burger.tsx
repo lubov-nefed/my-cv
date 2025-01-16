@@ -20,6 +20,7 @@ const Burger = ({ isOpen, handleBurgerClose }) => {
           className="burger__anchor"
           data-lang="burger-nav-item"
           href={`#${removeSpaces(dataLang.en.navItem[index])}`}
+          onClick={() => handleBurgerClose()}
         >
           {item}
         </a>

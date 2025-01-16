@@ -30,9 +30,11 @@ const Header = ({ ref, handleThemeSwitch, handleLangSwitch }) => {
   );
 
   const handleBurgerOpen = () => {
+    document.body.style.overflowY = "hidden";
     setIsBurgerOpen(true);
   };
   const handleBurgerClose = () => {
+    document.body.style.overflowY = "scroll";
     setIsBurgerOpen(false);
   };
   return (
