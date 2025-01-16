@@ -34,7 +34,7 @@ const Burger = ({ isOpen, handleBurgerClose }) => {
     >
       <header className="burger__header burger__header--theme-styles">
         <h2 className="burger__heading" data-lang="burger-heading">
-          Lyubov Nefyodova
+          {dataLang[lang].burgerHeading}
         </h2>
         <button
           className="burger__close-btn"
