@@ -6,7 +6,13 @@ import { dataLang } from "../../assets/language-content/langDependentContent";
 import { LanguageContext } from "../../LanguageContext";
 import { useContext, useState } from "react";
 
-const Header = ({ ref, handleThemeSwitch, handleLangSwitch }) => {
+interface IHeaderProps {
+  ref: React.RefObject<HTMLElement> | undefined;
+  handleThemeSwitch: () => void;
+  handleLangSwitch: () => void;
+}
+
+const Header = ({ ref, handleThemeSwitch, handleLangSwitch }: IHeaderProps) => {
   const [isBurgerOpen, setIsBurgerOpen] = useState(false);
   const lang = useContext(LanguageContext);
 

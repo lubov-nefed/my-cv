@@ -5,7 +5,12 @@ import { dataLang } from "../../../assets/language-content/langDependentContent"
 import { LanguageContext } from "../../../LanguageContext";
 import { useContext } from "react";
 
-const Burger = ({ isOpen, handleBurgerClose }) => {
+interface IBurgerProps {
+  isOpen: boolean;
+  handleBurgerClose: () => void;
+}
+
+const Burger = ({ isOpen, handleBurgerClose }: IBurgerProps) => {
   const lang = useContext(LanguageContext);
 
   const removeSpaces = (str: string) => {

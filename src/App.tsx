@@ -10,7 +10,7 @@ type lang = "en" | "ru";
 function App() {
   const [isHeaderIntersecting, setIsHeaderIntersecting] = useState(false);
   const headerRef = useRef(null);
-  const arrowRef = useRef(null);
+  const arrowRef = useRef<HTMLAnchorElement>(null);
   const [theme, setTheme] = useState("light");
   const [lang, setLang] = useState<lang>("en");
 
@@ -27,11 +27,15 @@ function App() {
     const observer = new IntersectionObserver(([entry]) => {
       setIsHeaderIntersecting(entry.isIntersecting);
     });
-    observer.observe(headerRef.current);
-    if (!isHeaderIntersecting) {
-      arrowRef.current.classList.add("visible");
-    } else {
-      arrowRef.current.classList.remove("visible");
+    if (headerRef.current) {
+      observer.observe(headerRef.current);
+    }
+    if (arrowRef.current) {
+      if (!isHeaderIntersecting) {
+        arrowRef.current.classList.add("visible");
+      } else {
+        arrowRef.current.classList.remove("visible");
+      }
     }
     return () => observer.disconnect();
   }, [isHeaderIntersecting]);
