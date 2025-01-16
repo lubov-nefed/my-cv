@@ -36,8 +36,8 @@ const Greetings = () => {
       <a
         className="first-section__btn"
         data-lang="first-section-btn"
-        href="viber://chat?number=%2B79991394531"
-        title="Contact me via Viber"
+        href="t.me/LubovNefed"
+        title="Contact me via Telegram"
       >
         {dataLang[lang].firstSectionBtn}
       </a>
